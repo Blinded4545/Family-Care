@@ -10,17 +10,17 @@ const Catalogo = ()=>{
     
     return (
         <>
-            <div className="d-flex flex-row">
-                <div className="m-5 p-3 fs-4">
+            <div className="container">
+                <div className="mx-5 my-4 p-3 fs-4">
                     <FilterTab/>
                 </div>
-                <div className="border border-2 border-secondary rounded-3 w-75 d-flex">
+                <div className="border border-2 border-secondary rounded-3 d-flex mb-3">
                     <div className="p-5 d-flex flex-wrap flex-row w-100 justify-content-center align-items-center gap-4">
                         {
                             categories.map((e)=>{
                                 return(
                                     <>
-                                        <h2>{e}</h2>
+                                        <h3>{e}</h3>
                                         <div className="d-flex flex-row justify-content-center align-items-center gap-4 px-5">
                                             {
                                                 productList.map((e2)=>{

@@ -9,11 +9,11 @@ const FilterTab = ()=>{
             <div>
                 <Form className="d-flex flex-column gap-4">
                     <Form.Group controlId="form-group-id" className="">
-                        <Form.Label className="fs-3">Buscar</Form.Label>
+                        <Form.Label className="fs-5">Buscar</Form.Label>
                         <div className="d-flex flex-row">  
                             <Form.Control type="text" placeholder="Producto" />
-                            <Button variant="info" onClick={() => console.log("Info")}>
-                                <Icon path={mdiMagnify} size={1.5}/>
+                            <Button className="d-flex align-items-center" variant="info" onClick={() => console.log("Info")}>
+                                <Icon path={mdiMagnify} size={0.85}/>
                             </Button>
                         </div>
                     </Form.Group>

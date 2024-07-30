@@ -1,17 +1,17 @@
-import { Card, ListGroup } from "react-bootstrap";
+import { Button, Card, ListGroup } from "react-bootstrap";
 
 const CardComponent = ({title, price, description, group}) => {
     return (
         <>            
-            <Card>
-                <Card.Img  variant="top" src="https://placehold.co/300"/>
+            <Card className="d-flex align-items-center">
+                <Card.Img variant="top" src="https://placehold.co/150" className="w-75"/>
                 <Card.Body>
-                    <Card.Title className="fs-3">{title}</Card.Title>
-                    <Card.Subtitle>{description}</Card.Subtitle>
-                    <Card.Text>${price}</Card.Text>
-                    <ListGroup variant="flush">
-                        <ListGroup.Item>{group}</ListGroup.Item>
-                    </ListGroup>
+                    <Card.Title className="fs-4">{title}</Card.Title>
+                    <Card.Subtitle><p className="lh-1 fw-normal">{description}</p></Card.Subtitle>
+                    <Card.Text className="fs-5 fw-bold">${price}</Card.Text>
+                    <Button variant="outline-primary w-100" onClick={() => console.log("Success")}>
+                        Ver mas
+                    </Button>
                 </Card.Body>
             </Card>
         </>

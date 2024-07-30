@@ -11,45 +11,45 @@ const Layout = ()=>{
         <>
             <Nav className="px-5 py-2 gap-4 bg-primary" id="mainNav">
                 <Nav.Item className="navItem">
-                    <Link to="/" className="fs-4 text-white text-decoration-none">Home</Link>
+                    <Link to="/" className="text-white text-decoration-none">Home</Link>
                 </Nav.Item>
                 <Nav.Item className="navItem">
-                    <Link to="/catalogo" className="fs-4 text-white text-decoration-none">Catálogo</Link>
+                    <Link to="/catalogo" className="text-white text-decoration-none">Catálogo</Link>
                 </Nav.Item>
                 <Nav.Item className="navItem">
-                    <Link to="/about" className="fs-4 text-white text-decoration-none">Sobre nosotros</Link>
+                    <Link to="/about" className="text-white text-decoration-none">Sobre nosotros</Link>
                 </Nav.Item>
             </Nav>
 
             <Outlet/>
 
-            <Container fluid className="bg-primary text-white p-4 mx-0">
+            <Container fluid className="bg-primary text-white px-4 py-3 mx-0">
                 <Row className="w-100">
-                    <Col className="mx-5">
+                    <Col className="mx-2">
                         <Stack className="d-flex align-items-center">
-                            <Image src="https://placehold.co/200" width={200} height={200} rounded/>
-                            <h2>Family Care</h2>
+                            <Image src="https://placehold.co/150" width={150} height={150} rounded/>
+                            <h3>Family Care</h3>
                             <p>Compania familiar</p>
                         </Stack>
                     </Col>
                     <Col>
-                        <Nav className="flex-column fs-4">
-                            <h3>Links</h3>
+                        <Nav className="flex-column fs-6">
+                            <h4>Links</h4>
                             <Link className="text-white text-decoration-none" to="/">Inicio</Link>
                             <Link className="text-white text-decoration-none" to="/Catalogo">Catalogo</Link>
                             <Link className="text-white text-decoration-none" to="/About">Sobre nosotros</Link>
                         </Nav>
                     </Col>
                     <Col>
-                        <h3>Contactanos!</h3>
-                        <ListGroup className="">
-                            <ListGroup.Item className="d-flex flex-row gap-3 justify-content-center bg-transparent border-0 text-white">
-                                <Icon color="white" path={mdiWhatsapp} size={1.5}/>
-                                <h4>04144540890</h4>
+                        <h4>Contactanos!</h4>
+                        <ListGroup className="d-flex align-items-center">
+                            <ListGroup.Item className="d-flex gap-2 bg-transparent border-0 text-white">
+                                <Icon color="white" path={mdiWhatsapp} size={1}/>
+                                <p>04144540890</p>
                             </ListGroup.Item>
-                            <ListGroup.Item className="d-flex flex-row gap-3 justify-content-center bg-transparent border-0 text-white">
-                                <Icon color="white" path={mdiGmail} size={1.5}/>
-                                <h4>familycare@gmail.com</h4>
+                            <ListGroup.Item className="d-flex bg-transparent border-0 text-white">
+                                <Icon color="white" path={mdiGmail} size={1}/>
+                                <p>familycare@gmail.com</p>
                             </ListGroup.Item>
                         </ListGroup>
                     </Col>
