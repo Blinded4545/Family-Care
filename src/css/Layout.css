@@ -1,0 +1,8 @@
+
+.navItem{
+    transition: all ease-in-out 0.1s;
+}
+
+.navItem:hover{
+    transform: scale(1.2);
+}
