@@ -5,6 +5,7 @@ import {Link, Outlet} from "react-router-dom"
 import Icon from '@mdi/react';
 import { mdiWhatsapp, mdiGmail } from '@mdi/js';
 import "../css/Layout.css"
+import logo from "../assets/Logo.png"
 
 const Layout = ()=>{
     return (
@@ -27,8 +28,7 @@ const Layout = ()=>{
                 <Row className="w-100">
                     <Col className="mx-2">
                         <Stack className="d-flex align-items-center">
-                            <Image src="https://placehold.co/150" width={150} height={150} rounded/>
-                            <h3>Family Care</h3>
+                            <Image src={logo} width={150} height={150} rounded/>
                             <p>Compania familiar</p>
                         </Stack>
                     </Col>

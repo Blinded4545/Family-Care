@@ -1,0 +1,16 @@
+ 
+
+#homeBannerCol{
+    background-image: url("https://github.com/Blinded4545/Wallpapers/blob/main/18.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#homeCenterDiv{
+    background-color: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(5px);
+}
+
+#familyTitle{
+    font-family: "Cougette";
+}
