@@ -1,5 +1,5 @@
 
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Container, Row, Col, Image, Button, Stack } from "react-bootstrap";
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import "../css/home.css"
@@ -15,7 +15,7 @@ const Home = ()=>{
         },
         desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 3
+        items: 8
         },
         tablet: {
         breakpoint: { max: 1024, min: 464 },
@@ -26,13 +26,53 @@ const Home = ()=>{
         items: 1
         }
     };
+
+    const items = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
     
     return (
 
         <>
-            <div className="h-100 w-100">
-                <Container fluid className="w-100 h-100 p-0 m-0">
-                    <Row className="shadow-sm w-100 p-0 m-0">
+            <div className="w-100">
+
+                <Stack gap={1} className="">
+                    <div id="homeBannerCol" className="shadow">
+                        <div className="d-flex justify-content-center w-100 my-5">
+                            <div className="border rounded-3 border-1 w-75 m-5 p-5" id="homeCenterDiv">
+                                <h3 className="fs-1 fst-italic" id="familyTitle">Family Care</h3>
+                                <p className="fst-italic fs-5" id="familySlogan">Que el cuidado de tu piel sea tu mejor presentación</p>
+                                <Button variant="primary" size="lg" onClick={() => console.log("Primary")}>
+                                    Ver Catalogo
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-100 p-0 m-0">
+                        <Carousel
+                            responsive={responsive}
+                            swipeable={true}
+                            draggable={true}
+                            showDots={false}
+                            infinite={true}
+                            autoPlay={true}
+                            autoPlaySpeed={1500}
+                            keyBoardControl={true}
+                            customTransition="all .4"
+                            transitionDuration={500}
+                            //deviceType={this.props.deviceType}
+                        >
+                            {
+                                items.map((e)=>{
+                                    return ( 
+                                        <Image src={`https://placehold.co/${e}00`} width={200}/>
+                                    )
+                                })
+                            }
+                        </Carousel>
+                    </div>
+                </Stack>
+
+                {/* <Container fluid className="w-100 p-0 m-0">
+                    <Row className="shadow w-100 py-auto my-auto mx-0">
                         <Col className="p-0 m-0" id="homeBannerCol">
                             <div className="d-flex justify-content-center w-100">
                                 <div className="border rounded-3 border-1 w-75 m-5 p-5" id="homeCenterDiv">
@@ -45,31 +85,12 @@ const Home = ()=>{
                             </div>
                         </Col>
                     </Row>
-                    <Row className="p-0 m-0">
+                    <Row className="py-auto m-0">
                         <Col className="w-100 p-0 m-0">
-                            <Carousel
-                                responsive={responsive}
-                                swipeable={true}
-                                draggable={true}
-                                showDots={false}
-                                infinite={true}
-                                autoPlay={true}
-                                autoPlaySpeed={1500}
-                                keyBoardControl={true}
-                                customTransition="all .4"
-                                transitionDuration={500}
-                                //deviceType={this.props.deviceType}
-                            >
-                                <Image src="https://placehold.co/200" width={200}/>
-                                <Image src="https://placehold.co/300" width={200}/>
-                                <Image src="https://placehold.co/400" width={200}/>
-                                <Image src="https://placehold.co/500" width={200}/>
-                                <Image src="https://placehold.co/600" width={200}/>
-                                <Image src="https://placehold.co/700" width={200}/>
-                            </Carousel>
+                            
                         </Col>
                     </Row>
-                </Container>
+                </Container> */}
             </div>
         </>
 
