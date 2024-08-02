@@ -29,13 +29,20 @@ const Home = ()=>{
     };
 
     const items = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+
+    const customAnimation = {
+        // Define your custom animation styles here
+        transform: 'translateX(-50%)',
+        transition: 'transform .5s ease-in-out',
+    };
+    
     
     return (
 
         <>
             <div className="w-100">
 
-                <Stack gap={1} className="">
+                <Stack gap={0} className="">
                     <div id="homeBannerCol" className="shadow">
                         <div className="d-flex justify-content-center w-100 my-5">
                             <div className="border rounded-3 border-1 w-75 m-5 p-5" id="homeCenterDiv">
@@ -57,16 +64,17 @@ const Home = ()=>{
                             showDots={false}
                             infinite={true}
                             autoPlay={true}
-                            autoPlaySpeed={1500}
+                            autoPlaySpeed={1000}
                             keyBoardControl={true}
-                            customTransition="all .4"
+                            ssr={true}
+                            customTransition="transform .5s ease-in-out"
                             transitionDuration={500}
                             //deviceType={this.props.deviceType}
                         >
                             {
                                 items.map((e)=>{
                                     return ( 
-                                        <Image src={`https://placehold.co/${e}00`} width={200}/>
+                                        <Image src={`https://picsum.photos/seed/${e}/200/200`} width={175} style={customAnimation}/>
                                     )
                                 })
                             }

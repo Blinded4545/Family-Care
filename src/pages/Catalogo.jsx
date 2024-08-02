@@ -11,8 +11,7 @@ import "../css/catalogo.css"
 const Catalogo = ()=>{
     
     const [currSearch, setCurrSearch] = useState("")
-    const [currFilter, setCurrFilter] = useState("0")
-    const [coincidence, setCoincidence] = useState(false)
+    const [currFilter, setCurrFilter] = useState("")
 
     return (
         <>
@@ -27,7 +26,7 @@ const Catalogo = ()=>{
                                     setCurrSearch(e.target.value)
                                     console.log(currSearch);
                                 }}/>
-                                    <DropdownButton title="Tipo de busqueda" id="dropdown-button-example">
+                                    <DropdownButton title={currFilter===""?"Tipo de busqueda":currFilter==="1"?"Titulo":"Categoria"} id="dropdown-button-example">
                                         <Dropdown.Header>Filtros</Dropdown.Header>
                                         <Dropdown.Divider />
                                         <Dropdown.Item eventKey="1" onClick={(e)=>{
@@ -46,7 +45,7 @@ const Catalogo = ()=>{
                     <div className="p-5 d-flex flex-wrap flex-row w-100 justify-content-center align-items-center gap-4">
                         {
                             categories.map((e)=>{
-                                if((currFilter==="2" || currFilter==="0") && e.toLowerCase().includes(currSearch)){
+                                if((currFilter==="2" || currFilter==="") && e.toLowerCase().includes(currSearch)){
                                     return(
                                         <>
                                             <h3>{e}</h3>
@@ -59,7 +58,7 @@ const Catalogo = ()=>{
                                                             }
                                                             else{
                                                                 return (
-                                                                    <CardComponent title={e2.title} price={e2.price} description={e2.description} group={e2.category}/>
+                                                                    <CardComponent title={e2.title} price={e2.price} description={e2.description} url={e2.url}/>
                                                                 )
                                                             }
                                                         })
@@ -81,7 +80,7 @@ const Catalogo = ()=>{
                                                         }
                                                         else if(e3.title.toLowerCase().includes(currSearch)){
                                                             return (
-                                                                <CardComponent title={e3.title} price={e3.price} description={e3.description} group={e3.category}/>
+                                                                <CardComponent title={e3.title} price={e3.price} description={e3.description} url={e3.url}/>
                                                             )
                                                         }
                                                     })

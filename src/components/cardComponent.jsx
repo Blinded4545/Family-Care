@@ -2,11 +2,11 @@
 import { Button, Card } from "react-bootstrap";
 import "../css/cardComponent.css"
 
-const CardComponent = ({title, price, description}) => {
+const CardComponent = ({title, price, description, url}) => {
     return (
         <>            
             <Card id="cardComp" className="d-flex align-items-center shadow-sm" style={{"min-width": "min-content"}}>
-                <Card.Img variant="top" src="https://placehold.co/150" className="w-75"/>
+                <Card.Img variant="top" src={url} className="w-75"/>
                 <Card.Body>
                     <Card.Title className="fs-4">{title}</Card.Title>
                     <Card.Subtitle><p className="lh-1 fw-normal text-break">{description}</p></Card.Subtitle>
