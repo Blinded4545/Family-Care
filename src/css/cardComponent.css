@@ -1,0 +1,8 @@
+
+#cardComp{
+    transition: all ease-in-out .2s;
+}
+
+#cardComp:hover{
+    transform: scale(1.05);
+}

@@ -1,5 +1,6 @@
 
 import { Container, Row, Col, Image, Button, Stack } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import "../css/home.css"
@@ -40,9 +41,11 @@ const Home = ()=>{
                             <div className="border rounded-3 border-1 w-75 m-5 p-5" id="homeCenterDiv">
                                 <h3 className="fs-1 fst-italic" id="familyTitle">Family Care</h3>
                                 <p className="fst-italic fs-5" id="familySlogan">Que el cuidado de tu piel sea tu mejor presentación</p>
-                                <Button variant="primary" size="lg" onClick={() => console.log("Primary")}>
-                                    Ver Catalogo
-                                </Button>
+                                <Link to="/Catalogo">
+                                    <Button variant="primary" size="lg">
+                                        Ver Catalogo
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -70,27 +73,6 @@ const Home = ()=>{
                         </Carousel>
                     </div>
                 </Stack>
-
-                {/* <Container fluid className="w-100 p-0 m-0">
-                    <Row className="shadow w-100 py-auto my-auto mx-0">
-                        <Col className="p-0 m-0" id="homeBannerCol">
-                            <div className="d-flex justify-content-center w-100">
-                                <div className="border rounded-3 border-1 w-75 m-5 p-5" id="homeCenterDiv">
-                                    <h3 className="fs-1 fst-italic" id="familyTitle">Family Care</h3>
-                                    <p className="fst-italic fs-5" id="familySlogan">Que el cuidado de tu piel sea tu mejor presentación</p>
-                                    <Button variant="primary" size="lg" onClick={() => console.log("Primary")}>
-                                        Ver Catalogo
-                                    </Button>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                    <Row className="py-auto m-0">
-                        <Col className="w-100 p-0 m-0">
-                            
-                        </Col>
-                    </Row>
-                </Container> */}
             </div>
         </>
 
