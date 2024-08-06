@@ -6,3 +6,18 @@
 #cardComp:hover{
     transform: scale(1.05);
 }
+
+@media (width>=1920){
+    #titleText{
+        font-size: 1rem !important;
+    }
+    #descriptionText{
+        font-size: 4rem !important;
+    }
+    #priceText{
+        font-size: 4rem !important;
+    }
+    #buttonText{
+        font-size: 4rem !important;
+    }
+}
