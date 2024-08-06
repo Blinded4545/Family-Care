@@ -1,5 +1,5 @@
 
-import { Container, Row, Col, Image, Button, Stack } from "react-bootstrap";
+import { Image, Button, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
@@ -7,15 +7,18 @@ import "../css/home.css"
 
 const Home = ()=>{
 
+    const RPH = ()=>{
+
+    }
     
     const responsive = {
         superLargeDesktop: {
         // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
-        items: 5
+        breakpoint: { max: 4000, min: 1920 },
+        items: 8
         },
         desktop: {
-        breakpoint: { max: 3000, min: 1024 },
+        breakpoint: { max: 1919, min: 1024 },
         items: 8
         },
         tablet: {
@@ -28,7 +31,7 @@ const Home = ()=>{
         }
     };
 
-    const items = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+    const items = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
     const customAnimation = {
         // Define your custom animation styles here
@@ -49,7 +52,7 @@ const Home = ()=>{
                                 <h3 className="fs-1 fst-italic" id="familyTitle">Family Care</h3>
                                 <p className="fst-italic fs-5" id="familySlogan">Que el cuidado de tu piel sea tu mejor presentación</p>
                                 <Link to="/Catalogo">
-                                    <Button variant="primary" size="lg">
+                                    <Button variant="primary" id="gotoButton" size="lg">
                                         Ver Catalogo
                                     </Button>
                                 </Link>
@@ -74,7 +77,7 @@ const Home = ()=>{
                             {
                                 items.map((e)=>{
                                     return ( 
-                                        <Image src={`https://picsum.photos/seed/${e}/200/200`} width={175} style={customAnimation}/>
+                                        <Image src={`https://picsum.photos/seed/${e}/200/200`} width={175} className="carouselImage" style={customAnimation}/>
                                     )
                                 })
                             }

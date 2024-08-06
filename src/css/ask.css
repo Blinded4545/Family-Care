@@ -1,6 +1,6 @@
 
 #aboutWrapper{
-    background-image: url("https://raw.githubusercontent.com/Blinded4545/Wallpapers/main/green-grass-aesthetic-desktop-wallpaper.webp");
+    background-image: url("https://raw.githubusercontent.com/Blinded4545/Wallpapers/main/c5061df5975697f5a6a3feaffc726106fc290143_high.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -10,7 +10,18 @@
     backdrop-filter: blur(5px);
 }
 
-.pText{
+#pText{
     font-family: "Courgette";
     font-weight: normal;
+}
+
+@media (width>=1910px) {
+    #textContainer{
+        margin: 8rem !important;
+    }
+    #pText{
+        font-size: 2.1rem !important;
+        margin: 3rem;
+    }
+
 }

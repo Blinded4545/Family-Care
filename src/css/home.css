@@ -14,3 +14,28 @@
 #familyTitle{
     font-family: "Cougette";
 }
+
+@media (width>=1910px) {
+    #familyTitle{
+        font-size: 5rem !important;
+    }
+    #familySlogan{
+        font-size: 2rem !important;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    #gotoButton{
+        font-size: 2rem !important;
+    }
+    #homeCenterDiv{
+        margin-top: 8rem !important;
+        margin-bottom: 8rem !important;
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
+    .carouselImage{
+        width: 250px;
+        height: 250px;
+    }
+}

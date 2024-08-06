@@ -10,7 +10,7 @@ import logo from "../assets/Logo.png"
 const Layout = ()=>{
     return (
         <>
-            <Nav className="px-5 py-2 gap-4 bg-primary" id="mainNav">
+            <Nav className="px-5 py-2 gap-5" id="mainNav">
                 <Nav.Item className="navItem">
                     <Link to="/" className="text-white text-decoration-none">Home</Link>
                 </Nav.Item>
@@ -24,31 +24,30 @@ const Layout = ()=>{
 
             <Outlet/>
 
-            <Container fluid className="bg-primary text-white px-4 py-3 mx-0">
+            <Container fluid className="text-white px-4 py-3 mx-0" id="footerContainer">
                 <Row className="w-100">
-                    <Col className="mx-2">
+                    <Col className="mx-2" id="imageCol">
                         <Stack className="d-flex align-items-center">
-                            <Image src={logo} width={150} height={150} rounded/>
-                            <p>Compania familiar</p>
+                            <Image src={logo} id="logoImage" rounded/>
                         </Stack>
                     </Col>
-                    <Col>
-                        <Nav className="flex-column fs-6">
+                    <Col id="linkCol" className="d-flex flex-column justify-content-center">
+                        <Nav className="flex-column fs-6" id="linkList">
                             <h4>Links</h4>
-                            <Link className="text-white text-decoration-none" to="/">Inicio</Link>
-                            <Link className="text-white text-decoration-none" to="/Catalogo">Catalogo</Link>
-                            <Link className="text-white text-decoration-none" to="/About">Sobre nosotros</Link>
+                            <Link className="text-white text-decoration-none linkItem" to="/">Inicio</Link>
+                            <Link className="text-white text-decoration-none linkItem" to="/Catalogo">Catalogo</Link>
+                            <Link className="text-white text-decoration-none linkItem" to="/About">Sobre nosotros</Link>
                         </Nav>
                     </Col>
-                    <Col>
+                    <Col id="contactCol" className="d-flex flex-column justify-content-center">
                         <h4>Contactanos!</h4>
                         <ListGroup className="d-flex align-items-center">
                             <ListGroup.Item className="d-flex gap-2 bg-transparent border-0 text-white">
-                                <Icon color="white" path={mdiWhatsapp} size={1}/>
+                                <Icon color="white" path={mdiWhatsapp} size={1} className="footerIcon"/>
                                 <p>04144540890</p>
                             </ListGroup.Item>
-                            <ListGroup.Item className="d-flex bg-transparent border-0 text-white">
-                                <Icon color="white" path={mdiGmail} size={1}/>
+                            <ListGroup.Item className="d-flex gap-2 bg-transparent border-0 text-white">
+                                <Icon color="white" path={mdiGmail} size={1} className="footerIcon"/>
                                 <p>familycare@gmail.com</p>
                             </ListGroup.Item>
                         </ListGroup>

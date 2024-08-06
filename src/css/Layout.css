@@ -1,8 +1,62 @@
 
+#footerContainer, #mainNav{
+    background-color: #1679AB;
+}
+
 .navItem{
     transition: all ease-in-out 0.1s;
 }
 
 .navItem:hover{
     transform: scale(1.2);
+}
+
+#logoImage{
+    width: 200px;
+    height: 200px;
+    filter: invert(1);
+    transition: all ease-in-out .1s;
+}
+
+#logoImage:hover{
+    transform: scale(1.1);
+}
+
+.linkItem{
+    transition: all ease-in-out .1s;
+}
+
+.linkItem:hover{
+    transform: scale(1.2);
+}
+
+@media (width>=1910px) {
+    #mainNav{
+        font-size: 2rem;
+    }
+
+    #footerContainer{
+        font-size: 2rem;
+    }
+
+    #linkList{
+        font-size: 2rem !important;
+    }
+    #linkList>h4{
+        font-size: 2.5rem;
+    }
+    
+    #contactCol>h4{
+        font-size: 2.5rem;
+    }
+
+    #logoImage{
+        width: 250px;
+        height: 250px;
+    }
+
+    .footerIcon{
+        width: 3rem !important;
+        height: 3rem !important;
+    }
 }
