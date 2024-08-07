@@ -7,6 +7,12 @@
     transform: scale(1.05);
 }
 
+.cardImage{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
 @media (width>=1920){
     #titleText{
         font-size: 1rem !important;
