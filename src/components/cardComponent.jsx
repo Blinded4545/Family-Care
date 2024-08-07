@@ -6,7 +6,7 @@ const CardComponent = ({title, description, url}) => {
     return (
         <>            
             <Card id="cardComp" className="d-flex align-items-center shadow-sm" style={{"min-width": "min-content"}}>
-                <Card.Img variant="top" className="w-75 cardImage" style={{backgroundImage: `url(${url})`}}/>
+                <Card.Img id="cardImage" variant="top" className="w-75" style={{backgroundImage: `url(${url})`}}/>
                 <Card.Body>
                     <Card.Title className="fs-4"><p id="titText">{title}</p></Card.Title>
                     <Card.Subtitle><p className="lh-1 fw-normal text-break" id="descriptionText">{description}</p></Card.Subtitle>

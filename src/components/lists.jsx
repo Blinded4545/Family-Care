@@ -1,15 +1,15 @@
 
-import so1 from "../assets/solido1.png"
-import so2 from "../assets/solido2.png"
-import so3 from "../assets/solido3.png"
+import so1 from "../assets/solido1.webp"
+import so2 from "../assets/solido2.webp"
+import so3 from "../assets/solido3.webp"
 
 import li1 from "../assets/liquido1.webp"
-import li2 from "../assets/liquido22.png"
+import li2 from "../assets/liquido22.webp"
 import li3 from "../assets/liquido3.webp"
 
-import ma1 from "../assets/manos1.png"
-import ma2 from "../assets/manos22.png"
-import ma3 from "../assets/manos3.png"
+import ma1 from "../assets/manos1.webp"
+import ma2 from "../assets/manos22.webp"
+import ma3 from "../assets/manos3.webp"
 
 export const productList = [
     {

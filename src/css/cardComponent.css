@@ -7,7 +7,7 @@
     transform: scale(1.05);
 }
 
-.cardImage{
+#cardImage{
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -25,5 +25,11 @@
     }
     #buttonText{
         font-size: 4rem !important;
+    }
+
+    #cardImage{
+        width: 500px !important;
+        height: 500px !important;
+        background-size: auto;
     }
 }
