@@ -1,56 +1,78 @@
 import { Link } from "react-router-dom";
-import {
-  Facebook,
-  Instagram,
-  Twitter,
-} from "lucide-react";
-import Logo from "../assets/Logo.png"
+import { mdiFacebook, mdiWhatsapp, mdiInstagram } from "@mdi/js";
+import Icon from "@mdi/react";
+import { ReactComponent as Logo } from './logo.svg'; // si usas SVGR
 
 export const Footer=()=>{
+
+  const textStyles=`
+    hover:text-bubblegum 
+    text-gray-600
+    text-md
+  `
+  const iconStyle=`
+    hover:text-bubblegum 
+    text-gray-900
+  `
+  const titleStyle=`
+    text-bubblegum 
+    font-semibold 
+    text-xl
+  `
+
   return (
-    <footer className="bg-green-800 text-white pt-10">
+    <footer className="bg-peachfrost text-white pt-10 shadow-[0_-6px_6px_-4px_rgba(0,0,0,0.2)]">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 pb-10">
         <div className="md:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
-          <img src={Logo} alt="Logo" className=" mb-4" />
-          <p className="text-sm text-green-100">
+          <Link to="/" className="scale-75 md:scale-100">
+            <img src={Logo} alt="Logo" className="mb-0 md:mb-4"/>
+            <svg
+              xmlns={Logo}
+              viewBox="0 0 24 24"
+              className="mb-0 md:mb-4 hover:fill-bubblegum"
+            >
+              <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12..." />
+            </svg>
+          </Link>
+          <p className={`text-md w-xs ${textStyles}`}>
             Cuidamos tu piel con ingredientes naturales y fórmulas que respetan el medio ambiente.
           </p>
           <div className="flex space-x-4 mt-4 justify-center w-full">
-            <a href="#" className="hover:text-green-300">
-              <Instagram />
+            <a href="#" className={`${iconStyle}`}>
+              <Icon path={mdiInstagram} size={1.5}></Icon>
             </a>
-            <a href="#" className="hover:text-green-300">
-              <Facebook />
+            <a href="#" className={`${iconStyle}`}>
+              <Icon path={mdiFacebook} size={1.5}></Icon>
             </a>
-            <a href="#" className="hover:text-green-300">
-              <Twitter />
+            <a href="#" className={`${iconStyle}`}>
+              <Icon path={mdiWhatsapp} size={1.5}></Icon>
             </a>
           </div>
         </div>
 
         {/* Enlaces */}
         <div className="flex flex-col items-center md:items-start space-y-2">
-          <h4 className="text-green-300 font-semibold">Compañía</h4>
-          <Link to="/contacto" className="hover:text-green-300 text-sm">Contacto</Link>
+          <h3 className={`${titleStyle}`}>Compañía</h3>
+          <Link to="/contacto" className={`${textStyles}`}>Contacto</Link>
         </div>
 
         <div className="flex flex-col items-center md:items-start space-y-2">
-          <h4 className="text-green-300 font-semibold">Productos</h4>
-          <Link to="/productos" className="hover:text-green-300 text-sm">Jabón Líquido</Link>
-          <Link to="/productos" className="hover:text-green-300 text-sm">Jabón Solidos</Link>
-          <Link to="/productos" className="hover:text-green-300 text-sm">Jabones Liquidos Corporales</Link>
-          <Link to="/productos" className="hover:text-green-300 text-sm">Detergentes y mas</Link>
+          <h3 className={`${titleStyle}`}>Productos</h3>
+          <Link to="/jabon-corporal" className={`${textStyles}`}>Jabón Líquido</Link>
+          <Link to="/jabon-solido" className={`${textStyles}`}>Jabón Solidos</Link>
+          <Link to="/jabon-manos" className={`${textStyles}`}>Jabones Liquidos Corporales</Link>
+          <Link to="/detergentes" className={`${textStyles}`}>Detergentes y mas</Link>
         </div>
 
         <div className="flex flex-col items-center md:items-start space-y-2">
-          <h4 className="text-green-300 font-semibold">Contacto</h4>
-          <p className="text-sm">familycare@gmail.com</p>
-          <p className="text-sm">+58 1234 1234567</p>
+          <h2 className={`${titleStyle}`}>Contacto</h2>
+          <p className={`${textStyles}`}>familycare@gmail.com</p>
+          <p className={`${textStyles}`}>+58 1234 1234567</p>
         </div>
       </div>
 
       {/* Footer inferior */}
-      <div className="bg-green-900 py-4 text-sm text-green-200 px-6 flex justify-center md:flex-row justify-between items-center">
+      <div className="bg-peachfrost py-4 text-sm text-bubblegum px-6 flex justify-center md:flex-row items-center">
         <span>© All rights reserved FamilyCare</span>
       </div>
     </footer>

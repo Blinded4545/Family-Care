@@ -5,7 +5,7 @@ export const JabonLiquido = () => {
   return (
     <>
         <NavBar/>
-        <div>Liq</div>
+        <div className="text-midnight">Liq</div>
         <Footer/>
     </>
   )

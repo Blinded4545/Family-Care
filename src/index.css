@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+body{
+    background-color: #f0f0f0;
+}
+
+#MainSection{
+    background-image: url('./assets/SolidBg3.webp');
+}
+
+@theme {
+    --color-bgf0: #f0f0f0;
+    --color-teagreen: #AACC96;
+    --color-bubblegum: #a8657e;
+    --color-forest: #25533F;
+    --color-peachfrost: #F4BEAE;
+    --color-icedblue: #97bce8;
+    --color-blueberry: #17506d;
+}
+
+@layer utilities {
+  .text-shadow-bubblegum {
+    text-shadow: 4px 4px 5px #a8657e; /* Tailwind green-500 */
+  }
+
+  .text-shadow-forest {
+    text-shadow: 2px 2px 8px #25533F; /* Tailwind green-500 */
+  }
+
+  .text-shadow-blueberry {
+    text-shadow: 2px 2px 16px #17506d; /* Tailwind green-500 */
+  }
+}

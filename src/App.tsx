@@ -6,6 +6,7 @@ import { JabonLiquido } from './views/JabonLiquido'
 import { JabonManos } from './views/JabonManos'
 import { JabonSolido } from './views/JabonSolido'
 import { Detergentes } from './views/Detergentes'
+import { Contacto } from './views/Contacto'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/jabon-manos' element={<JabonManos/>}></Route>
           <Route path='/jabon-solido' element={<JabonSolido/>}></Route>
           <Route path='/detergentes' element={<Detergentes/>}></Route>
+          <Route path='/contacto' element={<Contacto/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

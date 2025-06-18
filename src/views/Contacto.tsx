@@ -1,14 +1,12 @@
 import { NavBar } from "../components/NavBar"
 import { Footer } from "../components/Footer"
 
-export const MainView = () => {
+export const Contacto = () => {
   return (
-    <>
       <div className="min-h-screen flex flex-col">
         <NavBar/>
-        <div className="text-3xl">Inicio</div>
+        <div className="">Contacto</div>
         <Footer/>
       </div>
-    </>
   )
 }
