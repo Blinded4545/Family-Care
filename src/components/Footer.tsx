@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { mdiFacebook, mdiWhatsapp, mdiInstagram } from "@mdi/js";
 import Icon from "@mdi/react";
-import { ReactComponent as Logo } from './logo.svg'; // si usas SVGR
+import Logo from "../assets/Logo.svg"
 
 export const Footer=()=>{
 
@@ -26,13 +26,6 @@ export const Footer=()=>{
         <div className="md:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
           <Link to="/" className="scale-75 md:scale-100">
             <img src={Logo} alt="Logo" className="mb-0 md:mb-4"/>
-            <svg
-              xmlns={Logo}
-              viewBox="0 0 24 24"
-              className="mb-0 md:mb-4 hover:fill-bubblegum"
-            >
-              <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12..." />
-            </svg>
           </Link>
           <p className={`text-md w-xs ${textStyles}`}>
             Cuidamos tu piel con ingredientes naturales y fórmulas que respetan el medio ambiente.
