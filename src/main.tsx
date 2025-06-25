@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' index element={<MainView/>} ></Route>
+        <Route path='*' index element={<MainView/>} ></Route>
         <Route path='/jabon-manos' element={<JabonManos/>}></Route>
         <Route path='/jabon-liquido' element={<JabonCorporal/>}></Route>
         <Route path='/jabon-solido' element={<JabonSolido/>}></Route>
