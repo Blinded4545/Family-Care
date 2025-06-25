@@ -27,14 +27,14 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
             <div className="space-y-12 max-w-5xl mx-auto px-4">
                 {categories.map((cat, categoryIdx) => (
                 <div key={categoryIdx}>
-                    <h2 className="text-bubblegum text-2xl font-semibold mb-6 text-center">
+                    <h2 className="text-blueberry text-2xl font-semibold mb-6 text-center">
                     {cat.category}
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
                     {cat.products.map((product, productIdx) => (
                         <div
                         key={productIdx}
-                        className="cursor-pointer transition-transform hover:scale-105"
+                        className="cursor-pointer transition-transform hover:scale-105 hover:shadow-2xl-forest"
                         onClick={() => handleImageClick(categoryIdx, productIdx)}
                         >
                         <img

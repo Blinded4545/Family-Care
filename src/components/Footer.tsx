@@ -6,22 +6,22 @@ import Logo from "../assets/Logo.svg"
 export const Footer=()=>{
 
   const textStyles=`
-    hover:text-bubblegum 
+    hover:text-blueberry 
     text-gray-600
     text-md
   `
   const iconStyle=`
-    hover:text-bubblegum 
+    hover:text-blueberry 
     text-gray-900
   `
   const titleStyle=`
-    text-bubblegum 
+    text-blueberry 
     font-semibold 
     text-xl
   `
 
   return (
-    <footer className="bg-peachfrost text-white pt-10 shadow-[0_-6px_6px_-4px_rgba(0,0,0,0.2)]">
+    <footer className="bg-icedblue text-white pt-10 shadow-[0_-6px_6px_-4px_rgba(0,0,0,0.2)]">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 pb-10">
         <div className="md:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
           <Link to="/" className="scale-75 md:scale-100">
@@ -65,7 +65,7 @@ export const Footer=()=>{
       </div>
 
       {/* Footer inferior */}
-      <div className="bg-peachfrost py-4 text-sm text-bubblegum px-6 flex justify-center md:flex-row items-center">
+      <div className="bg-icedblue py-4 text-sm text-blueberry px-6 flex justify-center md:flex-row items-center">
         <span>© All rights reserved FamilyCare</span>
       </div>
     </footer>

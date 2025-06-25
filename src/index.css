@@ -1,12 +1,26 @@
 @import "tailwindcss";
 
 body{
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
-#MainSection{
-    background-image: url('./assets/SolidBg3.webp');
+#JabonesMain>#MainSection{
+  background-image: url('./assets/SolidBgBLUE.jpg');
 }
+
+#DeterMain>#MainSection{
+  background-image: url('./assets/DeterGREEN.jpg');
+}
+
+#MainHero{
+  background-image: url('./assets/HeroBG.png');
+}
+
+#MainContact{
+  background-image: url('./assets/ContactMain.jpg');
+  background-color: red;
+}
+
 
 @theme {
     --color-bgf0: #f0f0f0;
@@ -16,6 +30,10 @@ body{
     --color-peachfrost: #F4BEAE;
     --color-icedblue: #97bce8;
     --color-blueberry: #17506d;
+
+    --shadow-2xl-blueberry: 0px 0px 10px #17506d;
+    --shadow-2xl-bubblegum: 0px 0px 10px #a8657e;
+    --shadow-2xl-forest: 0px 0px 10px #25533F;
 }
 
 @layer utilities {
@@ -24,10 +42,22 @@ body{
   }
 
   .text-shadow-forest {
-    text-shadow: 2px 2px 8px #25533F; /* Tailwind green-500 */
+    text-shadow: 4px 4px 5px #25533F; /* Tailwind green-500 */
   }
 
   .text-shadow-blueberry {
-    text-shadow: 2px 2px 16px #17506d; /* Tailwind green-500 */
+    text-shadow: 4px 4px 5px #17506d; /* Tailwind green-500 */
+  }
+
+  .shadow-2xl-bubblegum{
+    box-shadow: #a8657e;
+  }
+
+  .shadow-lg-forest{
+    box-shadow: #25533F;
+  }
+
+  .shadow-lg-blueberry{
+    box-shadow: #17506d;
   }
 }

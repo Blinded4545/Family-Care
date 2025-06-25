@@ -2,10 +2,11 @@
 import './App.css'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { MainView } from './views/MainView'
-import { JabonLiquido } from './views/JabonLiquido'
 import { JabonManos } from './views/JabonManos'
+import { JabonCorporal } from './views/JabonCorporal'
 import { JabonSolido } from './views/JabonSolido'
-import { Detergentes } from './views/Detergentes'
+import { Detergente } from './views/Detergente'
+import { Limpiadores } from './views/Limpiadores'
 import { Contacto } from './views/Contacto'
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<MainView/>}></Route>
-          <Route path='/jabon-corporal' element={<JabonLiquido/>}></Route>
           <Route path='/jabon-manos' element={<JabonManos/>}></Route>
+          <Route path='/jabon-liquido' element={<JabonCorporal/>}></Route>
           <Route path='/jabon-solido' element={<JabonSolido/>}></Route>
-          <Route path='/detergentes' element={<Detergentes/>}></Route>
+          <Route path='/detergente' element={<Detergente/>}></Route>
+          <Route path='/desinfectantes' element={<Limpiadores/>}></Route>
           <Route path='/contacto' element={<Contacto/>}></Route>
         </Routes>
       </BrowserRouter>
