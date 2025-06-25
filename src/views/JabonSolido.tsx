@@ -2,7 +2,6 @@ import { NavBar } from "../components/NavBar"
 import { Footer } from "../components/Footer"
 import type { ProductCategory } from "../components/types";
 import { ProductLister } from "../components/ProductLister";
-import { useState } from "react";
 
 export const JabonSolido = () => {
 

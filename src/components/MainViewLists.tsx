@@ -1,3 +1,6 @@
+
+import type { Testimonio } from "../components/types";
+
 export const productos = [
 {
     nombre: "Jabon en barra rojo",
@@ -37,7 +40,7 @@ export const productos = [
 },
 ];
 
-export const testimonios = [
+export const testimonios: (Testimonio | undefined)[] = [
 {
     nombre: "Camilo Herrera",
     ciudad: "Aragua - Venezuela",
@@ -73,8 +76,7 @@ export const testimonios = [
     ciudad: "Aragua - Venezuela",
     texto: "Productos de suma calidad. La mejor relación precio-valor del mercado. Proveedor 100% recomendado.",
     imagen: "https://placehold.co/1000x1000",
-},
-// Puedes agregar más testimonios aquí si lo deseas
+}
 ];
 
 export const settings = {

@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
 
 import { productos, testimonios, settings } from "../components/MainViewLists";
+import type { Testimonio } from "../components/types";
 
 export const MainView = () => {
  
@@ -57,7 +58,7 @@ export const MainView = () => {
             <h3 className="text-3xl text-gray-700 font-bold mb-8">Lo que dice nuestros clientes</h3>
             <div className="max-w-4xl mx-auto px-4">
               <Slider {...settings}>
-                {testimonios.map((t, i) => (
+                {testimonios.filter((t): t is Testimonio => t !== undefined).map((t, i) => (
                   <div key={i} className="px-4">
                     <img src={t.imagen} alt="cliente" className="mx-auto w-32 h-32 rounded-full mb-4 object-cover" />
                     <p className="text-gray-600 mb-2">{t.texto}</p>

@@ -63,7 +63,7 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
                     },
                 }}
                 render={{
-                    slide: ({ slide, rect }) => (
+                    slide: ({ slide }) => (
                     <div className="flex items-center justify-center h-full w-full">
                         {/* @ts-ignore porque `src` es válido aunque no lo detecta bien */}
                         <img

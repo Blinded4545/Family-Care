@@ -8,3 +8,10 @@ export interface ProductCategory {
   category: string;
   products: Product[];
 }
+
+export interface Testimonio {
+  nombre: string,
+  ciudad: string,
+  texto: string,
+  imagen: string
+}
