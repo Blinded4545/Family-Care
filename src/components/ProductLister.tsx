@@ -27,7 +27,7 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
             <div className="space-y-12 max-w-5xl mx-auto px-4">
                 {categories.map((cat, categoryIdx) => (
                 <div key={categoryIdx}>
-                    <h2 className="text-blueberry text-2xl font-semibold mb-6 text-center">
+                    <h2 className="text-forest text-3xl font-semibold mb-6 text-center">
                     {cat.category}
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">

@@ -24,7 +24,7 @@ export const JabonSolido = () => {
             id='MainSection'
             className="h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center"
           >
-            <h2 className="text-white text-center text-6xl font-bold drop-shadow-lg text-shadow-blueberry">
+            <h2 className="text-white text-center text-6xl font-bold drop-shadow-lg text-shadow-forest">
               Jabones Solidos
             </h2>
           </section>

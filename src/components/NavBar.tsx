@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import Logo from "../assets/Logo.svg"
 
 export const NavBar = ()=>{
   const [isOpen, setIsOpen] = useState(false)
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  const closeTimeooutRef = useRef<number | null>(null);
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
-  const navItemClass = "relative group text-gray-700 hover:text-blueberry h-full"
+  const navItemClass = "relative group text-gray-700 hover:text-forest h-full"
 
   const underlineClass = `
     after:content-['']
@@ -17,13 +19,26 @@ export const NavBar = ()=>{
     after:right-0
     after:w-0
     after:h-[2px]
-    after:bg-blueberry
+    after:bg-forest
     after:transition-all
     after:duration-300
     after:origin-bottom-left
     hover:after:origin-bottom-right
     hover:after:w-full
   `
+
+  const handleMouseEnter = ()=>{
+    if(closeTimeooutRef.current){
+      clearTimeout(closeTimeooutRef.current)
+    }
+    setIsSubMenuOpen(true)
+  }
+
+  const handleMouseLeave = ()=>{
+    closeTimeooutRef.current = window.setTimeout(()=>{
+      setIsSubMenuOpen(false)
+    }, 1000)
+  }
 
   return (
     <nav className="bg-white shadow-md sticky top-0 left-0 w-full z-50">
@@ -42,21 +57,45 @@ export const NavBar = ()=>{
           </div>
 
           <div className="hidden md:flex items-center space-x-16 mx-15">
-            <div className="group relative h-full flex items-center">
+            <div className="group relative h-full flex items-center" 
+            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+            >
               <span className={`${navItemClass} ${underlineClass}`}>Jabones</span>
-              <div className="absolute left-0 top-full hidden group-hover:flex transition-all duration-300 transform flex-col bg-white shadow-md rounded-md z-50 w-48 my-2">
-                <Link to="/jabon-manos" className="px-4 py-2 hover:bg-gray-100 text-sm rounded-md">Jabón para manos</Link>
-                <Link to="/jabon-solido" className="px-4 py-2 hover:bg-gray-100 text-sm rounded-md">Jabón en barra</Link>
-                <Link to="/jabon-liquido" className="px-4 py-2 hover:bg-gray-100 text-sm rounded-md">Jabón líquido corporal</Link>
-              </div>
+              {
+                isSubMenuOpen && (
+                  <div className="
+                    absolute left-0 top-full
+                    flex
+                    opacity-0 group-hover:opacity-100
+                    pointer-events-none group-hover:pointer-events-auto
+                    transition-all duration-300 delay-100
+                    transform flex-col bg-white shadow-md rounded-md z-50 w-48 my-2
+                  ">
+                    <Link to="/jabon-manos" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón para manos</Link>
+                    <Link to="/jabon-solido" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón en barra</Link>
+                    <Link to="/jabon-liquido" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón líquido corporal</Link>
+                  </div>
+                )
+              }
             </div>
 
-            <div className="group relative h-full flex items-center">
+            <div className="group relative h-full flex items-center"
+            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <span className={`${navItemClass} ${underlineClass}`}>Limpiadores</span>
-              <div className="absolute left-0 top-full hidden group-hover:flex transition-all duration-300 transform flex-col bg-white shadow-md rounded-md z-50 w-48 my-2">
-                <Link to="/detergente" className="px-4 py-2 hover:bg-gray-100 text-sm rounded-md">Detergentes</Link>
-                <Link to="/desinfectantes" className="px-4 py-2 hover:bg-gray-100 text-sm rounded-md">Desinfectantes</Link>
-              </div>
+              {
+                isSubMenuOpen && (
+                  <div className="
+                    absolute left-0 top-full
+                    flex
+                    opacity-0 group-hover:opacity-100
+                    pointer-events-none group-hover:pointer-events-auto
+                    transition-all duration-300 delay-100
+                    transform flex-col bg-white shadow-md rounded-md z-50 w-48 my-2">
+                    <Link to="/detergente" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Detergentes</Link>
+                    <Link to="/desinfectantes" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Desinfectantes</Link>
+                </div>
+                )
+              }
             </div>
 
             <Link to="/contacto" className={`${navItemClass} ${underlineClass}`}>
@@ -67,7 +106,7 @@ export const NavBar = ()=>{
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white px-4 pt-2 pb-4 space-y-2 shadow">
+        <div className="md:hidden bg-white px-4 pt-2 pb-4 space-y-2 shadow flex flex-col justify-center items-center">
             <Link to="/" className={`${navItemClass} ${underlineClass}`}>
                 Inicio
             </Link>

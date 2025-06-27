@@ -20,21 +20,21 @@ export const MainView = () => {
           <section id="MainHero" className="relative bg-fixed bg-cover bg-center h-[80vh] flex items-center">
             <div className=" bg-opacity-40 w-full h-full absolute top-0 left-0 z-10" />
             <div className="relative z-20 text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-5xl font-extrabold leading-tight">Family Care</h1>
-              <p className="text-xl mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tempore distinctio ipsa saepe adipisci, cum similique! Molestiae laudantium reiciendis dicta, expedita iure tempora quos quidem aperiam porro nulla. Maxime, fugit.</p>
+              <h1 className="text-7xl font-extrabold leading-tight text-shadow-forest">Family Care</h1>
+              <p className="text-xl mt-4 text-shadow-forest">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tempore distinctio ipsa saepe adipisci, cum similique! Molestiae laudantium reiciendis dicta, expedita iure tempora quos quidem aperiam porro nulla. Maxime, fugit.</p>
             </div>
           </section>
 
           {/* Productos - carrusel */}
           <section className="py-16 text-center bg-white">
-            <h2 className="text-5xl font-bold text-gray-700 mb-4">Nuestros productos</h2>
-            <p className="text-gray-600 mb-10">Conoce un poco sobre nuestros productos que con mucho esfuerzo traemos para ti.</p>
+            <h2 className="text-5xl font-bold text-forest mb-4">Nuestros productos</h2>
+            <p className="text-forest mb-10">Conoce un poco sobre nuestros productos que con mucho esfuerzo traemos para ti.</p>
             <div className="max-w-6xl mx-auto px-4">
               <Slider {...settings}>
                 {productos.map((prod, i) => (
                   <div key={i} className="px-4">
                     <img src={prod.imagen} alt={prod.nombre} className="mx-auto h-[200px] object-contain" />
-                    <p className="mt-4 text-sm font-semibold text-gray-600">{prod.nombre}</p>
+                    <p className="mt-4 text-sm font-semibold text-forest">{prod.nombre}</p>
                   </div>
                 ))}
               </Slider>
@@ -45,9 +45,9 @@ export const MainView = () => {
           <section id="MainContact" className="relative bg-fixed bg-cover bg-center h-[60vh] flex items-center">
             <div className="bg-opacity-50 w-full h-full absolute top-0 left-0 z-10" />
             <div className="relative z-20 text-white max-w-3xl mx-auto px-4">
-              <h2 className="text-4xl font-bold leading-tight">Quieres contactarnos o saber mas de nosotros?</h2>
+              <h2 className="text-4xl font-bold leading-tight text-shadow-forest">Quieres contactarnos o saber mas de nosotros?</h2>
               <p className="mt-4 text-lg">¡Visita nuestras redes sociales o nuestro whatsapp!</p>
-              <Link to="/contacto" className="inline-block mt-6 bg-cyan-500 text-white font-bold px-6 py-2 rounded-md hover:bg-cyan-600 transition-colors">
+              <Link to="/contacto" className="inline-block mt-6 bg-teagreen text-forest font-bold px-6 py-2 rounded-md hover:bg-cyan-600 transition-colors">
                 Contactanos!
               </Link>
             </div>
@@ -55,14 +55,14 @@ export const MainView = () => {
 
           {/* Sección Testimonio */}
           <section className="py-20 bg-white text-center">
-            <h3 className="text-3xl text-gray-700 font-bold mb-8">Lo que dice nuestros clientes</h3>
+            <h3 className="text-3xl text-forest font-bold mb-8">Lo que dice nuestros clientes</h3>
             <div className="max-w-4xl mx-auto px-4">
               <Slider {...settings}>
                 {testimonios.filter((t): t is Testimonio => t !== undefined).map((t, i) => (
                   <div key={i} className="px-4">
                     <img src={t.imagen} alt="cliente" className="mx-auto w-32 h-32 rounded-full mb-4 object-cover" />
                     <p className="text-gray-600 mb-2">{t.texto}</p>
-                    <p className="text-cyan-600 font-bold">{t.nombre}</p>
+                    <p className="text-forest font-bold">{t.nombre}</p>
                     <p className="text-sm text-gray-500">{t.ciudad}</p>
                   </div>
                 ))}

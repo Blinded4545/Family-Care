@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+*{
+  /* font-family: source-sans; */
+  /* font-family: system-ui; */
+  /* font-family: Lora; */
+  font-family: system-ui
+}
+
 body{
   background-color: #f0f0f0;
 }
