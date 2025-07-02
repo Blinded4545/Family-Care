@@ -10,12 +10,14 @@ import { Detergente } from './views/Detergente.tsx'
 import { Limpiadores } from './views/Limpiadores.tsx'
 import { Contacto } from './views/Contacto.tsx'
 
+import { ScrollToTop } from './components/ScrollToTop.tsx'
 
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path='*' index element={<MainView/>} ></Route>
         <Route path='/jabon-manos' element={<JabonManos/>}></Route>

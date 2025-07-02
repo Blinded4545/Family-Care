@@ -51,10 +51,11 @@ export const Footer=()=>{
 
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h3 className={`${titleStyle}`}>Productos</h3>
-          <Link to="/jabon-corporal" className={`${textStyles}`}>Jabón Líquido</Link>
+          <Link to="/jabon-liquido" className={`${textStyles}`}>Jabón Líquido</Link>
           <Link to="/jabon-solido" className={`${textStyles}`}>Jabón Solidos</Link>
           <Link to="/jabon-manos" className={`${textStyles}`}>Jabones Liquidos Corporales</Link>
-          <Link to="/detergentes" className={`${textStyles}`}>Detergentes y mas</Link>
+          <Link to="/detergente" className={`${textStyles}`}>Detergentes</Link>
+          <Link to="/desinfectantes" className={`${textStyles}`}>Desinfectantes</Link>
         </div>
 
         <div className="flex flex-col items-center md:items-start space-y-2">

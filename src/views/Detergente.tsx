@@ -25,7 +25,7 @@ export const Detergente = () => {
             className="h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center"
           >
             <h2 className="text-white text-center text-6xl font-bold drop-shadow-lg text-shadow-forest">
-              Desinfectantes y Limpiadores
+              Detergentes
             </h2>
           </section>
           <section className="my-10 bg-bgf0 py-15">

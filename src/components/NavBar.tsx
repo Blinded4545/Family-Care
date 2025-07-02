@@ -43,11 +43,11 @@ export const NavBar = ()=>{
   return (
     <nav className="bg-white shadow-md sticky top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-center items-center h-16">
           <Link to="/" className="mx-24">
             <img src={Logo} alt="Logo" className="h-32 p-0" />
           </Link>
-          <div className="md:hidden">
+          <div className="md:hidden absolute right-5">
             <button
               onClick={toggleMenu}
               className="text-gray-700 focus:outline-none"
@@ -106,7 +106,15 @@ export const NavBar = ()=>{
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white px-4 pt-2 pb-4 space-y-2 shadow flex flex-col justify-center items-center">
+        <div 
+          className={`
+            md:hidden
+            bg-white px-4 pt-2 pb-4 space-y-2 shadow
+            flex flex-col justify-center items-center
+            transition-all duration-300 ease-out
+            transform origin-top
+            ${isOpen ? "max-h-[500px] opacity-100 scale-y-100" : "max-h-0 opacity-0 scale-y-0 pointer-events-none"}
+          `}>
             <Link to="/" className={`${navItemClass} ${underlineClass}`}>
                 Inicio
             </Link>
@@ -119,8 +127,11 @@ export const NavBar = ()=>{
             <Link to="/jabon-liquido" className={`${navItemClass} ${underlineClass}`}>
                 Jabón liquido corporal
             </Link>
-            <Link to="/detergentes" className={`${navItemClass} ${underlineClass}`}>
-                Detergentes y mas
+            <Link to="/detergente" className={`${navItemClass} ${underlineClass}`}>
+                Detergentes
+            </Link>
+            <Link to="/desinfectantes" className={`${navItemClass} ${underlineClass}`}>
+                Desinfectantes
             </Link>
             <Link to="/contacto" className={`${navItemClass} ${underlineClass}`}>
               Contacto

@@ -54,8 +54,8 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
                 close={() => setOpen(false)}
                 slides={currentImages}
                 index={currentIndex}
-                animation={{ fade: 250 }}
-                carousel={{ finite: true }}
+                animation={{ swipe: 250 }}
+                carousel={{ finite: false }}
                 styles={{
                     container: {
                     backgroundColor: "rgba(0, 0, 0, 0.5)",
