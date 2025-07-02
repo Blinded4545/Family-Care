@@ -43,7 +43,7 @@ export const NavBar = ()=>{
   return (
     <nav className="bg-white shadow-md sticky top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center h-16">
+        <div className="flex justify-center md:justify-between items-center h-16">
           <Link to="/" className="mx-24">
             <img src={Logo} alt="Logo" className="h-32 p-0" />
           </Link>
