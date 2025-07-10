@@ -26,10 +26,10 @@ export const MainView = () => {
           </section>
 
           {/* Productos - carrusel */}
-          <section className="py-16 text-center bg-white min-h-screen flex flex-col justify-center">
+          <section className="text-center bg-white md:min-h-screen py-40 flex flex-col justify-center">
             <h2 className="text-5xl font-bold text-forest mb-4">Nuestros productos</h2>
-            <p className="text-forest mb-10">Conoce un poco sobre nuestros productos que con mucho esfuerzo traemos para ti.</p>
-            <div className="max-w-6xl mx-auto px-4">
+            <p className="text-forest mb-10 md:m-0 mx-16 my-8 ">Conoce un poco sobre nuestros productos que con mucho esfuerzo traemos para ti.</p>
+            <div className="max-w-screen mx-auto px-4">
               <Slider {...settings}>
                 {productos.map((prod, i) => (
                   <div key={i} className="px-4">
@@ -54,9 +54,9 @@ export const MainView = () => {
           </section>
 
           {/* Sección Testimonio */}
-          <section className="py-20 bg-white text-center min-h-screen flex flex-col justify-center">
-            <h3 className="text-3xl text-forest font-bold mb-8">Lo que dicen nuestros clientes</h3>
-            <div className="max-w-4xl mx-auto px-4">
+          <section className="bg-white text-center md:min-h-screen md:py-20 py-40 flex flex-col justify-center">
+            <h3 className="text-3xl text-forest font-bold md:mb-8 md:mx-0 mb-16 mx-1">Lo que dicen nuestros clientes</h3>
+            <div className="max-w-screen mx-auto px-4">
               <Slider {...settings}>
                 {testimonios.filter((t): t is Testimonio => t !== undefined).map((t, i) => (
                   <div key={i} className="px-4">

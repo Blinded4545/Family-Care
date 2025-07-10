@@ -31,10 +31,10 @@ export const Footer=()=>{
             Cuidamos tu piel con ingredientes naturales y fórmulas que respetan el medio ambiente.
           </p>
           <div className="flex space-x-4 mt-4 justify-center w-full">
-            <a href="#" className={`${iconStyle}`}>
+            <a href="https://www.instagram.com/jabonesfamilycare/" className={`${iconStyle}`}>
               <Icon path={mdiInstagram} size={1.5}></Icon>
             </a>
-            <a href="#" className={`${iconStyle}`}>
+            <a href="https://www.facebook.com/profile.php?id=61578006367166" className={`${iconStyle}`}>
               <Icon path={mdiFacebook} size={1.5}></Icon>
             </a>
             <a href="#" className={`${iconStyle}`}>
