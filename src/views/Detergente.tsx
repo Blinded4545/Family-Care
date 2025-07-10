@@ -9,9 +9,11 @@ export const Detergente = () => {
     {
       category: "Detergentes",
         products: [
-          { name: "Jabon Verde", image: "https://placehold.co/2000x2000" },
-          { name: "Jabon Rosa", image: "https://placehold.co/2000x2000" },
-          { name: "Jabon Azul", image: "https://placehold.co/2000x2000" },
+          { name: "Cherry", image: "https://placehold.co/2000x2000" },
+          { name: "Rocio", image: "https://placehold.co/2000x2000" },
+          { name: "Lavanda", image: "https://placehold.co/2000x2000" },
+          { name: "Manzana-Canela", image: "https://placehold.co/2000x2000" },
+          { name: "Citronella", image: "https://placehold.co/2000x2000" },
         ],
     },
   ]
@@ -19,12 +21,12 @@ export const Detergente = () => {
   return (
     <>
         <NavBar/>
-        <main id='DeterMain'>
+        <main id='Detergentes'>
           <section
             id='MainSection'
             className="h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center"
           >
-            <h2 className="text-white text-center text-6xl font-bold drop-shadow-lg text-shadow-forest">
+            <h2 className="text-white text-center text-5xl md:text-6xl font-bold drop-shadow-lg text-shadow-forest">
               Detergentes
             </h2>
           </section>

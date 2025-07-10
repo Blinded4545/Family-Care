@@ -9,9 +9,9 @@ export const JabonCorporal = () => {
     {
       category: "Jabones Liquidos Corporales",
         products: [
-          { name: "Jabon Verde", image: "https://placehold.co/2000x2000" },
-          { name: "Jabon Rosa", image: "https://placehold.co/2000x2000" },
-          { name: "Jabon Azul", image: "https://placehold.co/2000x2000" },
+          { name: "Kiwi", image: "https://placehold.co/2000x2000" },
+          { name: "Floral", image: "https://placehold.co/2000x2000" },
+          { name: "Coco Cream", image: "https://placehold.co/2000x2000" },
         ],
     }
   ];
@@ -19,12 +19,12 @@ export const JabonCorporal = () => {
   return (
     <>
         <NavBar/>
-        <main id='JabonesMain'>
+        <main id='Corporal'>
           <section
             id='MainSection'
             className="h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center"
           >
-            <h2 className="text-white text-center text-6xl font-bold drop-shadow-lg text-shadow-forest">
+            <h2 className="text-white text-center text-5xl md:text-6xl font-bold drop-shadow-lg text-shadow-forest">
               Jabones Liquidos Corporales
             </h2>
           </section>

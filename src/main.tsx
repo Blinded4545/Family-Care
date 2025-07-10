@@ -7,7 +7,7 @@ import { JabonManos } from './views/JabonManos.tsx'
 import { JabonCorporal } from './views/JabonCorporal.tsx'
 import { JabonSolido } from './views/JabonSolido.tsx'
 import { Detergente } from './views/Detergente.tsx'
-import { Limpiadores } from './views/Limpiadores.tsx'
+import { Otros } from './views/Otros.tsx'
 import { Contacto } from './views/Contacto.tsx'
 
 import { ScrollToTop } from './components/ScrollToTop.tsx'
@@ -24,7 +24,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path='/jabon-liquido' element={<JabonCorporal/>}></Route>
         <Route path='/jabon-solido' element={<JabonSolido/>}></Route>
         <Route path='/detergente' element={<Detergente/>}></Route>
-        <Route path='/desinfectantes' element={<Limpiadores/>}></Route>
+        <Route path='/Otros' element={<Otros/>}></Route>
         <Route path='/contacto' element={<Contacto/>}></Route>
       </Routes>
     </BrowserRouter>

@@ -30,18 +30,38 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
                     <h2 className="text-forest text-3xl font-semibold mb-6 text-center">
                     {cat.category}
                     </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-center">
+                    <div
+                    className="
+                        flex
+                        flex-wrap
+                        justify-center
+                        gap-6
+                    "
+                    >
                     {cat.products.map((product, productIdx) => (
                         <div
                         key={productIdx}
-                        className="cursor-pointer transition-transform hover:scale-105 hover:shadow-2xl-forest"
+                        className="
+                            cursor-pointer
+                            transition-transform
+                            hover:scale-105
+                            flex-shrink-0
+                            basis-full
+                            sm:basis-1/2
+                            md:basis-1/3
+                            max-w-[300px]
+                            border-0
+                        "
                         onClick={() => handleImageClick(categoryIdx, productIdx)}
                         >
                         <img
                             src={product.image}
                             alt={product.name}
-                            className="object-contain h-46 w-auto"
+                            className="object-contain h-46 w-auto mx-auto hover:shadow-2xl-forest"
                         />
+                        <p className="mt-2 text-forest text-base font-bold uppercase text-center">
+                            {product.name}
+                        </p>
                         </div>
                     ))}
                     </div>

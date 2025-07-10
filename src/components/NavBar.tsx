@@ -37,7 +37,7 @@ export const NavBar = ()=>{
   const handleMouseLeave = ()=>{
     closeTimeooutRef.current = window.setTimeout(()=>{
       setIsSubMenuOpen(false)
-    }, 1000)
+    }, 500)
   }
 
   return (
@@ -63,17 +63,20 @@ export const NavBar = ()=>{
               <span className={`${navItemClass} ${underlineClass}`}>Jabones</span>
               {
                 isSubMenuOpen && (
-                  <div className="
-                    absolute left-0 top-full
-                    flex
-                    opacity-0 group-hover:opacity-100
-                    pointer-events-none group-hover:pointer-events-auto
-                    transition-all duration-300 delay-100
-                    transform flex-col bg-white shadow-md rounded-md z-50 w-48 my-2
-                  ">
-                    <Link to="/jabon-manos" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón para manos</Link>
-                    <Link to="/jabon-solido" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón en barra</Link>
-                    <Link to="/jabon-liquido" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón líquido corporal</Link>
+                  <div className="pt-2 absolute left-0 top-full ">
+                    <div
+                      className="
+                        flex
+                        opacity-0 group-hover:opacity-100
+                        pointer-events-none group-hover:pointer-events-auto
+                        transition-all duration-300 delay-100
+                        transform flex-col bg-white shadow-md rounded-md z-50 w-48
+                      "
+                    >
+                      <Link to="/jabon-solido" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón en barra</Link>
+                      <Link to="/jabon-liquido" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón líquido corporal</Link>
+                      <Link to="/jabon-manos" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Jabón para manos</Link>
+                    </div>
                   </div>
                 )
               }
@@ -84,15 +87,19 @@ export const NavBar = ()=>{
               <span className={`${navItemClass} ${underlineClass}`}>Limpiadores</span>
               {
                 isSubMenuOpen && (
-                  <div className="
-                    absolute left-0 top-full
-                    flex
-                    opacity-0 group-hover:opacity-100
-                    pointer-events-none group-hover:pointer-events-auto
-                    transition-all duration-300 delay-100
-                    transform flex-col bg-white shadow-md rounded-md z-50 w-48 my-2">
-                    <Link to="/detergente" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Detergentes</Link>
-                    <Link to="/desinfectantes" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Desinfectantes</Link>
+                  <div className="pt-2 absolute left-0 top-full ">
+                    <div
+                      className="
+                        flex
+                        opacity-0 group-hover:opacity-100
+                        pointer-events-none group-hover:pointer-events-auto
+                        transition-all duration-300 delay-100
+                        transform flex-col bg-white shadow-md rounded-md z-50 w-48
+                      "
+                    >
+                      <Link to="/detergente" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Detergentes</Link>
+                      <Link to="/otros" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Productos varios</Link>
+                  </div>
                 </div>
                 )
               }
@@ -130,8 +137,8 @@ export const NavBar = ()=>{
             <Link to="/detergente" className={`${navItemClass} ${underlineClass}`}>
                 Detergentes
             </Link>
-            <Link to="/desinfectantes" className={`${navItemClass} ${underlineClass}`}>
-                Desinfectantes
+            <Link to="/otros" className={`${navItemClass} ${underlineClass}`}>
+                Productos varios
             </Link>
             <Link to="/contacto" className={`${navItemClass} ${underlineClass}`}>
               Contacto

@@ -13,22 +13,46 @@ body{
   overflow-x: hidden;
 }
 
-#JabonesMain>#MainSection{
-  background-image: url('./assets/SolidBgBLUE.jpg');
-}
-
-#DeterMain>#MainSection{
-  background-image: url('./assets/DeterGREEN.jpg');
-}
-
 #MainHero{
-  background-image: url('./assets/HeroBG.png');
+  background-image: url('./assets/Backgrounds/Show1HERO.jpg');
+  background-position: bottom;
+  background-size: cover;
 }
 
 #MainContact{
-  background-image: url('./assets/ContactMain.jpg');
+  background-image: url('./assets/Backgrounds/SoapShelves2.jpg');
+  background-position: top;
 }
 
+#Manos>#MainSection{
+  background-image: url('./assets/Backgrounds/WhiteFully.jpg');
+  background-position: center;
+}
+#Corporal>#MainSection{
+  background-image: url('./assets/Backgrounds/SoapShelves.jpg');
+  background-position: center;
+}
+#Solidos>#MainSection{
+  background-image: url('./assets/Backgrounds/greensoapinbasket.jpg');
+  background-position: center;
+}
+
+#Detergentes>#MainSection{
+  background-image: url('./assets/Backgrounds/DeterBlue.jpg');
+}
+
+#Otros>#MainSection{
+  background-image: url('./assets/Backgrounds/SolidBgBLUE.jpg');
+}
+
+#ContactMain>#MainSection{
+  background-image: url('./assets/Backgrounds/ContactBg.jpg');
+  background-position: bottom;
+}
+
+#ContactImg{
+  background-image: url("./assets/Backgrounds/ContactImg.png");
+}
 
 @theme {
     --color-bgf0: #f0f0f0;
@@ -46,15 +70,15 @@ body{
 
 @layer utilities {
   .text-shadow-bubblegum {
-    text-shadow: 4px 4px 5px #a8657e; /* Tailwind green-500 */
+    text-shadow: 4px 4px 5px #a8657e;
   }
 
   .text-shadow-forest {
-    text-shadow: 4px 4px 5px #25533F; /* Tailwind green-500 */
+    text-shadow: 4px 4px 5px #25533F;
   }
 
   .text-shadow-blueberry {
-    text-shadow: 4px 4px 5px #17506d; /* Tailwind green-500 */
+    text-shadow: 4px 4px 5px #17506d;
   }
 
   .shadow-2xl-bubblegum{

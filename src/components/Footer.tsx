@@ -61,7 +61,7 @@ export const Footer=()=>{
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h2 className={`${titleStyle}`}>Contacto</h2>
           <p className={`${textStyles}`}>familycare@gmail.com</p>
-          <p className={`${textStyles}`}>+58 1234 1234567</p>
+          <p className={`${textStyles}`}>+58 04124540890</p>
         </div>
       </div>
 

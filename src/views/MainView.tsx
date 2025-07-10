@@ -20,13 +20,13 @@ export const MainView = () => {
           <section id="MainHero" className="relative bg-fixed bg-cover bg-center h-[80vh] flex items-center">
             <div className=" bg-opacity-40 w-full h-full absolute top-0 left-0 z-10" />
             <div className="relative z-20 text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-7xl font-extrabold leading-tight text-shadow-forest">Family Care</h1>
-              <p className="text-xl mt-4 text-shadow-forest">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam tempore distinctio ipsa saepe adipisci, cum similique! Molestiae laudantium reiciendis dicta, expedita iure tempora quos quidem aperiam porro nulla. Maxime, fugit.</p>
+              <h1 className="text-6xl md:text-7xl font-extrabold leading-tight text-shadow-forest">Family Care</h1>
+              <p className="text-2xl mt-4 text-shadow-forest italic">Productos para el cuidado que tu piel merece.</p>
             </div>
           </section>
 
           {/* Productos - carrusel */}
-          <section className="py-16 text-center bg-white">
+          <section className="py-16 text-center bg-white min-h-screen flex flex-col justify-center">
             <h2 className="text-5xl font-bold text-forest mb-4">Nuestros productos</h2>
             <p className="text-forest mb-10">Conoce un poco sobre nuestros productos que con mucho esfuerzo traemos para ti.</p>
             <div className="max-w-6xl mx-auto px-4">
@@ -54,8 +54,8 @@ export const MainView = () => {
           </section>
 
           {/* Sección Testimonio */}
-          <section className="py-20 bg-white text-center">
-            <h3 className="text-3xl text-forest font-bold mb-8">Lo que dice nuestros clientes</h3>
+          <section className="py-20 bg-white text-center min-h-screen flex flex-col justify-center">
+            <h3 className="text-3xl text-forest font-bold mb-8">Lo que dicen nuestros clientes</h3>
             <div className="max-w-4xl mx-auto px-4">
               <Slider {...settings}>
                 {testimonios.filter((t): t is Testimonio => t !== undefined).map((t, i) => (
