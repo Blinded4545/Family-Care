@@ -2,6 +2,9 @@ import { NavBar } from "../components/NavBar"
 import { Footer } from "../components/Footer"
 import type { ProductCategory } from "../components/types";
 import { ProductLister } from "../components/ProductLister";
+import kiwi from "../assets/Products/corporalverde.png"
+import floral from "../assets/Products/corporalrojo.png"
+import coco from "../assets/Products/corporalblanco.png"
 
 export const JabonCorporal = () => {
 
@@ -9,9 +12,9 @@ export const JabonCorporal = () => {
     {
       category: "Jabones Liquidos Corporales",
         products: [
-          { name: "Kiwi", image: "https://placehold.co/2000x2000" },
-          { name: "Floral", image: "https://placehold.co/2000x2000" },
-          { name: "Coco Cream", image: "https://placehold.co/2000x2000" },
+          { name: "Kiwi", image: kiwi },
+          { name: "Floral", image: floral },
+          { name: "Coco Cream", image: coco },
         ],
     }
   ];

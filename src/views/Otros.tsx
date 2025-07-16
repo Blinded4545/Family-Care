@@ -3,45 +3,54 @@ import { Footer } from "../components/Footer"
 import { ProductLister } from "../components/ProductLister"
 import type { ProductCategory } from "../components/types"
 
+import suavrojo from "../assets/Products/suavizanterojo.png"
+import suavazul from "../assets/Products/suavizanteazul.png"
+import desen from "../assets/Products/desengrasante.png"
+import lavalimon from "../assets/Products/lavaplatoslimon.png"
+import lavamanda from "../assets/Products/lavaplatosmandarina.png"
+import cera from "../assets/Products/cera.png"
+import cloro from "../assets/Products/cloro.png"
+import banos from "../assets/Products/lavapocetas.png"
+
 export const Otros = () => {  
 
   const categories: ProductCategory[] = [
     {
       category: "Lavaplatos",
         products: [
-          { name: "Limon", image: "https://placehold.co/1000x1000" },
-          { name: "Mandarina", image: "https://placehold.co/1000x1000" }
+          { name: "Limon", image: lavalimon },
+          { name: "Mandarina", image: lavamanda }
         ],
     },
     {
       category: "Cera",
         products: [
-          { name: "Cera", image: "https://placehold.co/1000x1000" }
+          { name: "Cera", image: cera }
         ],
     },
     {
       category: "Suavizantes",
         products: [
-          { name: "Floral", image: "https://placehold.co/1000x1000" },
-          { name: "Bebe", image: "https://placehold.co/1000x1000" },
+          { name: "Floral", image: suavrojo },
+          { name: "Bebe", image: suavazul },
         ],
     },
     {
       category: "Desengrasante",
         products: [
-          { name: "Desengrasante", image: "https://placehold.co/1000x1000" }
+          { name: "Desengrasante", image: desen }
         ],
     },
     {
       category: "Cloro",
         products: [
-          { name: "Cloro", image: "https://placehold.co/1000x1000" }
+          { name: "Cloro", image: cloro }
         ],
     },
     {
       category: "Lava baños",
         products: [
-          { name: "Limpiador de pocetas", image: "https://placehold.co/1000x1000" }
+          { name: "Limpiador de pocetas", image: banos }
         ],
     }
   ]

@@ -3,17 +3,23 @@ import { Footer } from "../components/Footer"
 import { ProductLister } from "../components/ProductLister"
 import type { ProductCategory } from "../components/types"
 
+import deterverde from "../assets/Products/detergenteverde.png"
+import determorado from "../assets/Products/detergentemorado.png"
+import deterrojo from "../assets/Products/detergenterojo.png"
+import determarron from "../assets/Products/detergentemarron.png"
+import deterazul from "../assets/Products/detergenteazul.png"
+
 export const Detergente = () => {  
 
   const categories: ProductCategory[] = [
     {
       category: "Detergentes",
         products: [
-          { name: "Cherry", image: "https://placehold.co/2000x2000" },
-          { name: "Rocio", image: "https://placehold.co/2000x2000" },
-          { name: "Lavanda", image: "https://placehold.co/2000x2000" },
-          { name: "Manzana-Canela", image: "https://placehold.co/2000x2000" },
-          { name: "Citronella", image: "https://placehold.co/2000x2000" },
+          { name: "Cherry", image: deterrojo },
+          { name: "Rocio", image: deterazul },
+          { name: "Lavanda", image: determorado },
+          { name: "Manzana-Canela", image: determarron },
+          { name: "Citronella", image: deterverde },
         ],
     },
   ]

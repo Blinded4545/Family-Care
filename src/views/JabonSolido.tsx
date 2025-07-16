@@ -2,6 +2,9 @@ import { NavBar } from "../components/NavBar"
 import { Footer } from "../components/Footer"
 import type { ProductCategory } from "../components/types";
 import { ProductLister } from "../components/ProductLister";
+import menta from "../assets/Products/solidoVerde.png"
+import flores from "../assets/Products/solidoRojo.png"
+import brisa from "../assets/Products/solidoBlanco.png"
 
 export const JabonSolido = () => {
 
@@ -9,9 +12,9 @@ export const JabonSolido = () => {
     {
       category: "Jabones en Barra",
         products: [
-          { name: "Menta-Bamboo", image: "https://placehold.co/1000x1000" },
-          { name: "Flores del campo", image: "https://placehold.co/1000x1000" },
-          { name: "Brisas de primavera", image: "https://placehold.co/1000x1000" },
+          { name: "Menta-Bamboo", image: menta },
+          { name: "Flores del campo", image: flores },
+          { name: "Brisas de primavera", image: brisa },
         ],
     }
   ];

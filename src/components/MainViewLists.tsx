@@ -1,42 +1,61 @@
 
 import type { Testimonio } from "../components/types";
 
+import mango from "../assets/Products/manosverde.png"
+import cherry from "../assets/Products/manosrojo.png"
+import almendra from "../assets/Products/manosblanco.png"
+import kiwi from "../assets/Products/corporalverde.png"
+import floral from "../assets/Products/corporalrojo.png"
+import coco from "../assets/Products/corporalblanco.png"
+import todos from "../assets/Products/todos.png"
+import todosverdes from "../assets/Products/todosverdes.png"
+import todosrojos from "../assets/Products/todosrojos.png"
+import todosblancos from "../assets/Products/todosblancos.png"
+
+
 export const productos = [
 {
-    nombre: "Jabon en barra rojo",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Todos verdes",
+    imagen: todosverdes,
 },
 {
-    nombre: "Jabon en barra verde",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Todos",
+    imagen: todos,
+},{
+    nombre: "Todos rojos",
+    imagen: todosrojos,
 },
 {
-    nombre: "Jabon en barra azul",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Todos blancos",
+    imagen: todosblancos,
 },
 {
-    nombre: "Jabon liquido corporal rojo",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Corporal rojo",
+    imagen: floral,
 },
 {
-    nombre: "Jabon liquido corporal verde",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Corporal verde",
+    imagen: kiwi,
 },
 {
-    nombre: "Jabon liquido corporal azul",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Corporal blanco",
+    imagen: coco,
 },
 {
-    nombre: "Jabon liquido para manos rojo",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Manos rojo",
+    imagen: cherry,
 },
 {
-    nombre: "Jabon liquido para manos verde",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Manos verde",
+    imagen: mango,
 },
 {
-    nombre: "Jabon liquido para manos azul",
-    imagen: "https://placehold.co/1000x1000",
+    nombre: "Manos blanco",
+    imagen: almendra,
+},
+{
+    nombre: "Todos blancos",
+    imagen: todosblancos,
 },
 ];
 

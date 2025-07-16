@@ -2,6 +2,9 @@ import { NavBar } from "../components/NavBar"
 import { Footer } from "../components/Footer"
 import type { ProductCategory } from "../components/types";
 import { ProductLister } from "../components/ProductLister";
+import mango from "../assets/Products/manosverde.png"
+import cherry from "../assets/Products/manosrojo.png"
+import almendra from "../assets/Products/manosblanco.png"
 
 export const JabonManos = () => {
 
@@ -9,9 +12,9 @@ export const JabonManos = () => {
     {
       category: "Jabones Liquidos para Manos",
         products: [
-          { name: "Mango-Limón", image: "https://placehold.co/3000x3000" },
-          { name: "Cherry", image: "https://placehold.co/3000x3000" },
-          { name: "Almendra", image: "https://placehold.co/3000x3000" },
+          { name: "Mango-Limón", image: mango },
+          { name: "Cherry", image: cherry },
+          { name: "Almendra", image: almendra },
         ],
     }
   ];

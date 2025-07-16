@@ -32,9 +32,9 @@ export const MainView = () => {
             <div className="max-w-screen mx-auto px-4">
               <Slider {...settings}>
                 {productos.map((prod, i) => (
-                  <div key={i} className="px-4">
+                  <div key={i} className="px-4 md:py-10 py-5">
                     <img src={prod.imagen} alt={prod.nombre} className="mx-auto h-[200px] object-contain" />
-                    <p className="mt-4 text-sm font-semibold text-forest">{prod.nombre}</p>
+                    {/* <p className="mt-4 text-sm font-semibold text-forest">{prod.nombre}</p> */}
                   </div>
                 ))}
               </Slider>
