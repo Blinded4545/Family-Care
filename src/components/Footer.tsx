@@ -55,7 +55,7 @@ export const Footer=()=>{
           <Link to="/jabon-solido" className={`${textStyles}`}>Jabón Solidos</Link>
           <Link to="/jabon-manos" className={`${textStyles}`}>Jabones Liquidos Corporales</Link>
           <Link to="/detergente" className={`${textStyles}`}>Detergentes</Link>
-          <Link to="/desinfectantes" className={`${textStyles}`}>Desinfectantes</Link>
+          <Link to="/otros" className={`${textStyles}`}>Otros productos</Link>
         </div>
 
         <div className="flex flex-col items-center md:items-start space-y-2">
