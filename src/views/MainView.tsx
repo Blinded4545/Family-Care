@@ -9,6 +9,7 @@ import Slider from "react-slick"
 import { productos, testimonios, settings } from "../components/MainViewLists";
 import type { Testimonio } from "../components/types";
 
+
 export const MainView = () => {
  
   return (
