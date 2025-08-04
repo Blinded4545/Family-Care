@@ -37,7 +37,7 @@ export const Footer=()=>{
             <a href="https://www.facebook.com/profile.php?id=61578006367166" className={`${iconStyle}`}>
               <Icon path={mdiFacebook} size={1.5}></Icon>
             </a>
-            <a href="#" className={`${iconStyle}`}>
+            <a href="https://api.whatsapp.com/send/?phone=584144540890&type=phone_number&app_absent=0" className={`${iconStyle}`}>
               <Icon path={mdiWhatsapp} size={1.5}></Icon>
             </a>
           </div>
@@ -61,7 +61,7 @@ export const Footer=()=>{
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h2 className={`${titleStyle}`}>Contacto</h2>
           <p className={`${textStyles}`}>familycare@gmail.com</p>
-          <p className={`${textStyles}`}>+58 04124540890</p>
+          <p className={`${textStyles}`}>+58 04144540890</p>
         </div>
       </div>
 

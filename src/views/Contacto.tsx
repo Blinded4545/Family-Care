@@ -42,7 +42,7 @@ export const Contacto = () => {
                   </i>
                   <p className="mt-2 text-md text-pink-700 hidden md:inline">Instagram</p>
                 </a>
-                <a href="#" className="bg-green-100 hover:bg-green-200 rounded-lg p-4 text-center">
+                <a href="https://api.whatsapp.com/send/?phone=584144540890&type=phone_number&app_absent=0" className="bg-green-100 hover:bg-green-200 rounded-lg p-4 text-center">
                   <i className=" text-2xl text-forest">
                     <Icon path={mdiWhatsapp}></Icon>
                   </i>
