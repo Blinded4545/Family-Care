@@ -18,7 +18,7 @@ export const MainView = () => {
         <NavBar/>
         <div className="w-full">
           {/* Sección Hero */}
-          <section id="MainHero" className="relative bg-fixed bg-cover bg-center h-[80vh] flex items-center">
+          <section id="MainHero" className="relative bg-fixed bg-cover bg-center h-[80vh] flex items-center text-center">
             <div className=" bg-opacity-40 w-full h-full absolute top-0 left-0 z-10" />
             <div className="relative z-20 text-white max-w-4xl mx-auto px-4">
               <h1 className="text-6xl md:text-7xl font-extrabold leading-tight text-shadow-forest">Family Care</h1>
@@ -29,7 +29,7 @@ export const MainView = () => {
           {/* Productos - carrusel */}
           <section className="text-center bg-white md:min-h-screen py-40 flex flex-col justify-center">
             <h2 className="text-5xl font-bold text-forest mb-4">Nuestros productos</h2>
-            <p className="text-forest mb-10 md:m-0 mx-16 my-8 ">Conoce un poco sobre nuestros productos que con mucho esfuerzo traemos para ti.</p>
+            <p className="text-forest mb-10 md:m-0 mx-16 my-8 ">Conoce un poco sobre nuestros productos que con mucho amor y cariño traemos para ti.</p>
             <div className="max-w-screen mx-auto px-4">
               <Slider {...settings}>
                 {productos.map((prod, i) => (

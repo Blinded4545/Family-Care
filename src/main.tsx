@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path='/jabon-manos' element={<JabonManos/>}></Route>
         <Route path='/jabon-liquido' element={<JabonCorporal/>}></Route>
         <Route path='/jabon-solido' element={<JabonSolido/>}></Route>
-        <Route path='/detergente' element={<Detergente/>}></Route>
+        <Route path='/desinfectantes' element={<Detergente/>}></Route>
         <Route path='/Otros' element={<Otros/>}></Route>
         <Route path='/contacto' element={<Contacto/>}></Route>
       </Routes>

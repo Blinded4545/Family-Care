@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "https://blinded4545.github.io/Family-Care/"
+  base: "https://blinded4545.github.io"
 })

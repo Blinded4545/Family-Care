@@ -97,7 +97,7 @@ export const NavBar = ()=>{
                         transform flex-col bg-white shadow-md rounded-md z-50 w-48
                       "
                     >
-                      <Link to="/detergente" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Detergentes</Link>
+                      <Link to="/desinfectantes" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Desinfectantes</Link>
                       <Link to="/otros" className="px-4 py-2 hover:bg-teagreen text-sm rounded-md">Productos varios</Link>
                   </div>
                 </div>
@@ -134,8 +134,8 @@ export const NavBar = ()=>{
             <Link to="/jabon-liquido" className={`${navItemClass} ${underlineClass}`}>
                 Jabón liquido corporal
             </Link>
-            <Link to="/detergente" className={`${navItemClass} ${underlineClass}`}>
-                Detergentes
+            <Link to="/desinfectantes" className={`${navItemClass} ${underlineClass}`}>
+                Desinfectantes
             </Link>
             <Link to="/otros" className={`${navItemClass} ${underlineClass}`}>
                 Productos varios

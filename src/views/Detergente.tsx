@@ -13,7 +13,7 @@ export const Detergente = () => {
 
   const categories: ProductCategory[] = [
     {
-      category: "Detergentes",
+      category: "Desinfectantes",
         products: [
           { name: "Cherry", image: deterrojo },
           { name: "Rocio", image: deterazul },
@@ -33,7 +33,7 @@ export const Detergente = () => {
             className="h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center"
           >
             <h2 className="text-white text-center text-5xl md:text-6xl font-bold drop-shadow-lg text-shadow-forest">
-              Detergentes
+              Desinfectantes
             </h2>
           </section>
           <section className="my-10 bg-bgf0 py-15">
