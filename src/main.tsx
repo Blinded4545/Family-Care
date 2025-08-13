@@ -16,7 +16,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <ScrollToTop/>
       <Routes>
         <Route path='*' index element={<MainView/>} ></Route>

@@ -9,20 +9,39 @@ import Slider from "react-slick"
 import { productos, testimonios, settings } from "../components/MainViewLists";
 import type { Testimonio } from "../components/types";
 
+  const underlineClass = `
+    after:content-['']
+    after:absolute
+    after:bottom-[-8px]
+    after:left-0
+    after:w-0
+    after:h-[2px]
+    after:bg-teagreen
+    after:transition-all
+    after:duration-300
+    after:origin-bottom-right
+    hover:after:origin-bottom-left
+    hover:after:w-full
+    text-6xl
+    md:text-7xl
+    font-extrabold 
+    leading-tight 
+    text-shadow-forest
+  `
 
 export const MainView = () => {
  
   return (
     <>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col min-w-screen">
         <NavBar/>
         <div className="w-full">
           {/* Sección Hero */}
-          <section id="MainHero" className="relative bg-fixed bg-cover bg-center h-[80vh] flex items-center text-center">
+          <section id="MainHero" className="relative md:bg-fixed md:bg-cover bg-center h-[80vh] flex items-center text-center">
             <div className=" bg-opacity-40 w-full h-full absolute top-0 left-0 z-10" />
             <div className="relative z-20 text-white max-w-4xl mx-auto px-4">
-              <h1 className="text-6xl md:text-7xl font-extrabold leading-tight text-shadow-forest">Family Care</h1>
-              <p className="text-2xl mt-4 text-shadow-forest italic">Productos para el cuidado que tu piel merece.</p>
+              <h1 className={underlineClass}>Family Care</h1>
+              <p className="text-3xl mt-4 text-shadow-forest italic">Productos para el cuidado que tu piel merece.</p>
             </div>
           </section>
 
