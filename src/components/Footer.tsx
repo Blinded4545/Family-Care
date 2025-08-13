@@ -39,10 +39,10 @@ export const Footer = () => {
       </div>
 
       <div className="w-full px-6 py-6 flex flex-col md:flex-row justify-evenly gap-12 text-center md:text-left">
-        <div className="flex-1  text-center">
+        {/* <div className="flex-1  text-center">
           <h3 className={titleStyle}>Compañía</h3>
           <Link to="/contacto"><p className={textStyles}>Contacto</p></Link>
-        </div>
+        </div> */}
 
         <div className="flex-1  text-center">
           <h3 className={titleStyle}>Productos</h3>

@@ -27,7 +27,7 @@ export const Contacto = () => {
             <div className="w-full md:w-2/5">
               <h2 className="text-3xl font-semibold text-green-600 mb-4">¡Síguenos!</h2>
               <p className="text-gray-700">
-                Comparte, comenta y conoce más de nuestros productos!
+                ¡Comparte, comenta y conoce más de nuestros productos!
               </p>
               <div className="grid grid-cols-3 gap-4 m-10">
                 <a href="https://www.facebook.com/profile.php?id=61578006367166" className="bg-blue-100 hover:bg-blue-200 rounded-lg p-4 text-center">
@@ -46,7 +46,7 @@ export const Contacto = () => {
                   <i className=" text-2xl text-forest">
                     <Icon path={mdiWhatsapp}></Icon>
                   </i>
-                  <p className="mt-2 text-md text-green-700 hidden md:inline">Whatsapp</p>
+                  <p className="mt-2 text-md text-green-700 hidden md:inline">WhatsApp</p>
                 </a>
               </div>
             </div>

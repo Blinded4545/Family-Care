@@ -18,7 +18,7 @@ export const Otros = () => {
     {
       category: "Lavaplatos",
         products: [
-          { name: "Limon", image: lavalimon },
+          { name: "Limón", image: lavalimon },
           { name: "Mandarina", image: lavamanda }
         ],
     },
@@ -32,7 +32,7 @@ export const Otros = () => {
       category: "Suavizantes",
         products: [
           { name: "Floral", image: suavrojo },
-          { name: "Bebe", image: suavazul },
+          { name: "Bebé", image: suavazul },
         ],
     },
     {

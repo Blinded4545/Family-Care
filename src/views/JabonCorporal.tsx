@@ -10,7 +10,7 @@ export const JabonCorporal = () => {
 
   const categories: ProductCategory[] = [
     {
-      category: "Jabones Liquidos Corporales",
+      category: "Jabones Líquidos Corporales",
         products: [
           { name: "Kiwi", image: kiwi },
           { name: "Floral", image: floral },
@@ -28,7 +28,7 @@ export const JabonCorporal = () => {
             className="h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center"
           >
             <h2 className="text-white text-center text-5xl md:text-6xl font-bold drop-shadow-lg text-shadow-forest">
-              Jabones Liquidos Corporales
+              Jabones Líquidos Corporales
             </h2>
           </section>
           <section className="my-10 bg-bgf0 py-15">

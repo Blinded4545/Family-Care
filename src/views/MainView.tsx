@@ -65,10 +65,10 @@ export const MainView = () => {
           <section id="MainContact" className="relative bg-fixed bg-cover bg-center h-[60vh] flex items-center">
             <div className="bg-opacity-50 w-full h-full absolute top-0 left-0 z-10" />
             <div className="relative z-20 text-white max-w-3xl mx-auto px-4">
-              <h2 className="text-4xl font-bold leading-tight text-shadow-forest">Quieres contactarnos o saber mas de nosotros?</h2>
-              <p className="mt-4 text-lg">¡Visita nuestras redes sociales o nuestro whatsapp!</p>
+              <h2 className="text-4xl font-bold leading-tight text-shadow-forest">¿Quieres contactarnos o saber más de nosotros?</h2>
+              <p className="mt-4 text-lg">¡Visita nuestras redes sociales o nuestro WhatsApp!</p>
               <Link to="/contacto" className="inline-block mt-6 bg-teagreen text-forest font-bold px-6 py-2 rounded-md hover:bg-cyan-600 transition-colors">
-                Contactanos!
+                ¡Escríbenos a nuestro WhatsApp!
               </Link>
             </div>
           </section>
