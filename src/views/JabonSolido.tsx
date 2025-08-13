@@ -12,9 +12,9 @@ export const JabonSolido = () => {
     {
       category: "Jabones en Barra",
         products: [
-          { name: "Menta-Bamboo", image: menta },
-          { name: "Flores del campo", image: flores },
-          { name: "Brisas de primavera", image: brisa },
+          { name: "Menta-Bamboo", image: menta, description: "Slide description"  },
+          { name: "Flores del campo", image: flores, description: "Slide description"  },
+          { name: "Brisas de primavera", image: brisa, description: "Slide description"  },
         ],
     }
   ];

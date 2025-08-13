@@ -1,7 +1,9 @@
 import React, { useState } from "react"
 import type { ProductCategory } from "./types"
 import Lightbox from "yet-another-react-lightbox"
+import Captions from "yet-another-react-lightbox/plugins/captions"
 import "yet-another-react-lightbox/styles.css"
+import "yet-another-react-lightbox/plugins/captions.css";
 
 interface ProductGridProps {
     categories: ProductCategory[]
@@ -9,13 +11,20 @@ interface ProductGridProps {
 
 export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
     const [open, setOpen] = useState(false)
-    const [currentImages, setCurrentImages] = useState<{ src: string, title?: string }[]>([])
+
+    const [currentImages, setCurrentImages] = useState<{ src: string, title?: string, description:string }[]>([])
     const [currentIndex, setCurrentIndex] = useState(0)
+
+    const [showToggle, setShowToggle] = React.useState(false);
+    const [descriptionMaxLines, setDescriptionMaxLines] = React.useState(2);
+    const [descriptionTextAlign, setDescriptionTextAlign] = React.useState<"start" | "end" | "center">("center");
+
 
     const handleImageClick = (categoryIndex: number, imageIndex: number) => {
         const images = categories[categoryIndex].products.map((p) => ({
             src: p.image,
             title: p.name,
+            description: p.description
         }))
         setCurrentImages(images)
         setCurrentIndex(imageIndex)
@@ -57,7 +66,7 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
                         <img
                             src={product.image}
                             alt={product.name}
-                            className="object-contain h-46 w-auto mx-auto hover:shadow-2xl-forest"
+                            className="object-contain h-[200px] min-w-[200px] mx-auto hover:shadow-2xl-forest"
                         />
                         <p className="mt-2 text-forest text-base font-bold uppercase text-center">
                             {product.name}
@@ -76,23 +85,27 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
                 index={currentIndex}
                 animation={{ swipe: 250 }}
                 carousel={{ finite: false }}
+
+                plugins={[Captions]}
                 styles={{
                     container: {
                     backgroundColor: "rgba(0, 0, 0, 0.5)",
                     backdropFilter: "blur(2px)",
                     },
                 }}
+                captions={{ showToggle, descriptionTextAlign, descriptionMaxLines }}
+
                 render={{
                     slide: ({ slide }) => (
                     <div className="flex items-center justify-center h-full w-full">
-                        {/* @ts-ignore porque `src` es válido aunque no lo detecta bien */}
                         <img
                         src={slide.src}
-                        alt={slide.alt || ""}
+                        alt={slide.description?.toString() || ""}
                         style={{
                             maxHeight: "80vh",
                             maxWidth: "90vw",
                             objectFit: "contain",
+                            textAlign: "center"
                         }}
                         />
                     </div>

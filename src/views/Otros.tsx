@@ -18,39 +18,39 @@ export const Otros = () => {
     {
       category: "Lavaplatos",
         products: [
-          { name: "Limón", image: lavalimon },
-          { name: "Mandarina", image: lavamanda }
+          { name: "Limón", image: lavalimon, description: "Slide description"  },
+          { name: "Mandarina", image: lavamanda, description: "Slide description"  }
         ],
     },
     {
       category: "Cera",
         products: [
-          { name: "Cera", image: cera }
+          { name: "Cera", image: cera, description: "Slide description"  }
         ],
     },
     {
       category: "Suavizantes",
         products: [
-          { name: "Floral", image: suavrojo },
-          { name: "Bebé", image: suavazul },
+          { name: "Floral", image: suavrojo, description: "Slide description"  },
+          { name: "Bebé", image: suavazul, description: "Slide description"  },
         ],
     },
     {
       category: "Desengrasante",
         products: [
-          { name: "Desengrasante", image: desen }
+          { name: "Desengrasante", image: desen, description: "Slide description"  }
         ],
     },
     {
       category: "Cloro",
         products: [
-          { name: "Cloro", image: cloro }
+          { name: "Cloro", image: cloro, description: "Slide description"  }
         ],
     },
     {
       category: "Lava baños",
         products: [
-          { name: "Limpiador de pocetas", image: banos }
+          { name: "Limpiador de pocetas", image: banos, description: "Slide description"  }
         ],
     }
   ]

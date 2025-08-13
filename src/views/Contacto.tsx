@@ -14,7 +14,7 @@ export const Contacto = () => {
             className="h-[500px] bg-fixed bg-center bg-cover flex items-center justify-center"
           >
             <h2 className="text-white text-center text-5xl md:text-6xl font-bold drop-shadow-lg text-shadow-forest">
-              ¡Contactanos!
+              ¡Contáctanos!
             </h2>
           </section>
           <section className="flex flex-col md:flex-row justify-center items-center max-w-6xl md:max-w-full mx-auto p-8 gap-8">

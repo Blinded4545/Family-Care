@@ -15,11 +15,11 @@ export const Detergente = () => {
     {
       category: "Desinfectantes",
         products: [
-          { name: "Cherry", image: deterrojo },
-          { name: "Rocío", image: deterazul },
-          { name: "Lavanda", image: determorado },
-          { name: "Manzana-Canela", image: determarron },
-          { name: "Citronella", image: deterverde },
+          { name: "Cherry", image: deterrojo, description: "Slide description"  },
+          { name: "Rocío", image: deterazul, description: "Slide description"  },
+          { name: "Lavanda", image: determorado, description: "Slide description"  },
+          { name: "Manzana-Canela", image: determarron, description: "Slide description"  },
+          { name: "Citronella", image: deterverde, description: "Slide description"  },
         ],
     },
   ]

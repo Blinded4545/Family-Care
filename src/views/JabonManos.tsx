@@ -12,9 +12,9 @@ export const JabonManos = () => {
     {
       category: "Jabones Líquidos para Manos",
         products: [
-          { name: "Mango-Limón", image: mango },
-          { name: "Cherry", image: cherry },
-          { name: "Almendra", image: almendra },
+          { name: "Mango-Limón", image: mango, description: "Slide description"  },
+          { name: "Cherry", image: cherry, description: "Slide description"  },
+          { name: "Almendra", image: almendra, description: "Slide description"  },
         ],
     }
   ];

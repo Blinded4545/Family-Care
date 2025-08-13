@@ -12,9 +12,9 @@ export const JabonCorporal = () => {
     {
       category: "Jabones Líquidos Corporales",
         products: [
-          { name: "Kiwi", image: kiwi },
-          { name: "Floral", image: floral },
-          { name: "Coco Cream", image: coco },
+          { name: "Kiwi", image: kiwi, description: "Nuestro jabón corporal de kiwi combina una espuma suave con un aroma fresco que revitaliza tu piel desde la primera gota 🥝"},
+          { name: "Floral", image: floral, description: "Nuestro jabón corporal Floral te envuelve en una fragancia delicada y floral que permanece en tu piel 🌷" },
+          { name: "Coco Cream", image: coco, description: "Con el delicioso aroma tropical del coco y una textura cremosa, nuestro jabón corporal Coco Cream deja tu piel nutrida, suave y con un aroma irresistible 🥥" },
         ],
     }
   ];
