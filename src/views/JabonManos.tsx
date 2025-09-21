@@ -12,9 +12,9 @@ export const JabonManos = () => {
     {
       category: "Jabones Líquidos para Manos",
         products: [
-          { name: "Mango-Limón", image: mango, description: "Slide description"  },
-          { name: "Cherry", image: cherry, description: "Slide description"  },
-          { name: "Almendra", image: almendra, description: "Slide description"  },
+          { name: "Mango-Limón", image: mango, description: "Energía tropical en tus manos. Cítrico y vibrante: limpia a profundidad y deja un aroma que levanta el ánimo 🥭🍋"  },
+          { name: "Cherry", image: cherry, description: "Dulce, suave y encantador. Una fragancia frutal que te hace sonreír en cada lavado 🍒"  },
+          { name: "Almendra", image: almendra, description: "Suavidad cremosa que reconforta. Aroma cálido de almendra con espuma delicada que mima tus manos 🌰"  },
         ],
     }
   ];

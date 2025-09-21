@@ -12,9 +12,9 @@ export const JabonSolido = () => {
     {
       category: "Jabones en Barra",
         products: [
-          { name: "Menta-Bamboo", image: menta, description: "Slide description"  },
-          { name: "Flores del campo", image: flores, description: "Slide description"  },
-          { name: "Brisas de primavera", image: brisa, description: "Slide description"  },
+          { name: "Menta-Bamboo", image: menta, description: "Frescura revitalizante en cada pasada. Notas de menta y bamboo que despiertan tus sentidos y dejan la piel fresca 🍃"  },
+          { name: "Flores del campo", image: flores, description: "Un toque floral que enamora. Aroma alegre y femenino con espuma cremosa que limpia sin resecar 🌺"  },
+          { name: "Brisas de primavera", image: brisa, description: "Limpieza suave que se siente desde el primer uso. Un aroma limpio y delicado que acompaña tu día con frescura y calma. 🌼"  },
         ],
     }
   ];

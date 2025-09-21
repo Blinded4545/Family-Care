@@ -17,37 +17,61 @@ body{
   background-image: url('./assets/Backgrounds/Show1HERO.jpg');
   background-position: bottom;
   background-size: cover;
+  @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
 }
 
 #MainContact{
   background-image: url('./assets/Backgrounds/SoapShelves2.jpg');
   background-position: top;
+  @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
 }
 
 #Manos>#MainSection{
   background-image: url('./assets/Backgrounds/WhiteFully.jpg');
   background-position: center;
+  @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
 }
 #Corporal>#MainSection{
   background-image: url('./assets/Backgrounds/SoapShelves.jpg');
   background-position: center;
+  @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
 }
 #Solidos>#MainSection{
   background-image: url('./assets/Backgrounds/greensoapinbasket.jpg');
   background-position: center;
+  @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
 }
 
 #Detergentes>#MainSection{
   background-image: url('./assets/Backgrounds/DeterBlue.jpg');
+  @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
 }
 
 #Otros>#MainSection{
   background-image: url('./assets/Backgrounds/SolidBgBLUE.jpg');
+  @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
 }
 
 #ContactMain>#MainSection{
   background-image: url('./assets/Backgrounds/ContactBg.jpg');
   background-position: bottom;
+  @supports (-webkit-touch-callout: none) {
+        background-attachment: initial !important;
+    }
 }
 
 #ContactImg{

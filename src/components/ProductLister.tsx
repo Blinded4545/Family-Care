@@ -16,18 +16,21 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const [showToggle, setShowToggle] = React.useState(false);
-    const [descriptionMaxLines, setDescriptionMaxLines] = React.useState(2);
+    const [descriptionMaxLines, setDescriptionMaxLines] = React.useState(5);
     const [descriptionTextAlign, setDescriptionTextAlign] = React.useState<"start" | "end" | "center">("center");
-
-
+    
     const handleImageClick = (categoryIndex: number, imageIndex: number) => {
         const images = categories[categoryIndex].products.map((p) => ({
             src: p.image,
             title: p.name,
             description: p.description
         }))
+
         setCurrentImages(images)
         setCurrentIndex(imageIndex)
+        setShowToggle(false)
+        setDescriptionMaxLines(5)
+        setDescriptionTextAlign("center")
         setOpen(true)
     }
 
@@ -93,7 +96,7 @@ export const ProductLister: React.FC<ProductGridProps> = ({ categories }) => {
                     backdropFilter: "blur(2px)",
                     },
                 }}
-                captions={{ showToggle, descriptionTextAlign, descriptionMaxLines }}
+                captions={{ showToggle, descriptionTextAlign, descriptionMaxLines}}
 
                 render={{
                     slide: ({ slide }) => (

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { mdiFacebook, mdiWhatsapp, mdiInstagram } from "@mdi/js";
 import Icon from "@mdi/react";
-import Logo from "../assets/Logo.svg";
+import Logo from "../assets/LogoFooter.svg";
 import FlagVE from "../assets/Ven.png"; // Asegúrate de tener esta imagen
 
 export const Footer = () => {
@@ -31,7 +31,7 @@ export const Footer = () => {
       {/* Logo arriba */}
       <div className="flex flex-col items-center">
         <Link to="/" className="scale-90 md:scale-100">
-          <img src={Logo} alt="Logo" className="max-h-55" />
+          <img src={Logo} alt="Logo" className="max-h-40 md:my-8" />
         </Link>
         <p className={`text-center max-w-xs text-gray-900 text-md hover:text-forest`}>
           Cuidamos tu piel con ingredientes naturales y fórmulas que respetan el medio ambiente.
